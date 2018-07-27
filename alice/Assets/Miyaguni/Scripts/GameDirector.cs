@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameDirector : MonoBehaviour {
 	[SerializeField]
@@ -10,11 +11,14 @@ public class GameDirector : MonoBehaviour {
 	float GameTime;
 	[SerializeField]
 	GameObject[] Colors;
+	[SerializeField]
+	GameObject RestartButton;
 	int colorCount;
 
 	void Start () {
 		//GameTime = 60.0f;
 		colorCount = 0;
+		RestartButton.SetActive(false);
 	}
 	
 	void FixedUpdate () {
@@ -28,17 +32,27 @@ public class GameDirector : MonoBehaviour {
 			Destroy(catgene);
 			Destroy(cat);
 			TimeText.GetComponent<Text>().text = "Game Over";
+			RestartButton.SetActive(true);
 		}
 
 		if(Colors[2].activeSelf){
 			Destroy(catgene);
 			Destroy(cat);
 			TimeText.GetComponent<Text>().text = "Game Clear!";
+			Invoke("Clear", 1.0f);
 		}
 	}
 
 	public void GetCat(){
 		Colors[colorCount].SetActive(true);
 		colorCount++;
+	}
+
+	public void Restart(){
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+	}
+
+	void Clear(){
+		SceneManager.LoadScene("Clear");
 	}
 }
