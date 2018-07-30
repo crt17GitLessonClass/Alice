@@ -22,6 +22,14 @@ public class cat : MonoBehaviour {
 
 		catTransparency += Time.deltaTime * catTransparencySpeed;
 
+		CapsuleCollider2D cc2d = GetComponent<CapsuleCollider2D>();
+		if(catTransparency < 0.4f){
+			cc2d.enabled = false;
+		}else{
+			cc2d.enabled = true;
+		}
+
+
 		sr.color = new Color(1.0f,1.0f,1.0f,Mathf.Sin(180 * catTransparency * Mathf.Deg2Rad));
 
 		if(catAlife > 1){

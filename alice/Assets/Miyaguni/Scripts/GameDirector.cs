@@ -13,6 +13,7 @@ public class GameDirector : MonoBehaviour {
 	GameObject[] Colors;
 	[SerializeField]
 	GameObject RestartButton;
+	
 	int colorCount;
 
 	void Start () {
@@ -28,17 +29,17 @@ public class GameDirector : MonoBehaviour {
 		GameObject catgene = GameObject.FindWithTag("Generator");
 		GameObject cat = GameObject.FindWithTag("cat");
 
-		if(GameTime < 1){
+		if(GameTime < 0.5f){
 			Destroy(catgene);
 			Destroy(cat);
-			TimeText.GetComponent<Text>().text = "Game Over";
+			TimeText.GetComponent<Text>().text = "Faild";
 			RestartButton.SetActive(true);
 		}
 
 		if(Colors[2].activeSelf){
 			Destroy(catgene);
 			Destroy(cat);
-			TimeText.GetComponent<Text>().text = "Game Clear!";
+			TimeText.GetComponent<Text>().text = "Clear!";
 			Invoke("Clear", 1.0f);
 		}
 	}

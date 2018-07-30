@@ -5,6 +5,8 @@ using UnityEngine;
 public class CatGenerator : MonoBehaviour {
     [SerializeField]
     GameObject[] cats;
+    [SerializeField]
+	Vector2[] catPopPos;
 
 	void Start () {
 		Invoke("catgene", 0.5f);
@@ -15,7 +17,7 @@ public class CatGenerator : MonoBehaviour {
         int catCount = 0;
         catCount--;
         if(catCount <= 0){
-            Instantiate(cats[i], new Vector2(Random.Range(-7.35f,7.35f),Random.Range(-4,4)), Quaternion.identity);
+            Instantiate(cats[i], catPopPos[i], Quaternion.identity);
             catCount = 1;
         }
     }

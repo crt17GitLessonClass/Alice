@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4473283193164100}
   - component: {fileID: 212781263010080828}
-  - component: {fileID: 58583441445172402}
   - component: {fileID: 114539364177991264}
+  - component: {fileID: 70884723357801806}
   m_Layer: 0
   m_Name: Cat4
   m_TagString: cat
@@ -42,8 +42,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &58583441445172402
-CircleCollider2D:
+--- !u!70 &70884723357801806
+CapsuleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -55,8 +55,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.5
+  m_Size: {x: 3, y: 3}
+  m_Direction: 0
 --- !u!114 &114539364177991264
 MonoBehaviour:
   m_ObjectHideFlags: 1
