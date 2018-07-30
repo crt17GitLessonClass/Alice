@@ -23,7 +23,7 @@ public class cat : MonoBehaviour {
 		catTransparency += Time.deltaTime * catTransparencySpeed;
 
 		CapsuleCollider2D cc2d = GetComponent<CapsuleCollider2D>();
-		if(catTransparency < 0.4f){
+		if(catTransparency < 0.2f||catTransparency > 0.6f){
 			cc2d.enabled = false;
 		}else{
 			cc2d.enabled = true;
