@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Nagamine/Scene/GameMain.unity
+    guid: 9282b67a37be65b49b36970ec38cb066
+  - enabled: 1
+    path: Assets/Nagamine/Scene/ARcamera.unity
+    guid: bb96f34d64e420d43aff63b129290bf7
   m_configObjects: {}
