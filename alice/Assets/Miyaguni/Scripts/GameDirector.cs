@@ -54,6 +54,7 @@ public class GameDirector : MonoBehaviour {
 	}
 
 	void Clear(){
-		SceneManager.LoadScene("Clear");
+		//SceneManager.LoadScene("Clear");
+		Debug.Log("clear");
 	}
 }
