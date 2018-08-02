@@ -10,25 +10,27 @@ public class GameDirector : MonoBehaviour {
 	[SerializeField]
 	float GameTime;
 	[SerializeField]
-	GameObject[] Colors;
+	int catCount;
+	[SerializeField]
+	GameObject catCountText;
 	[SerializeField]
 	GameObject RestartButton;
 	
-	int colorCount;
 
 	void Start () {
 		//GameTime = 60.0f;
-		colorCount = 0;
+		catCount = 3;
 		RestartButton.SetActive(false);
 	}
 	
 	void FixedUpdate () {
 		GameTime = Mathf.Clamp(GameTime, 0.0f, 60.0f);
-		TimeText.GetComponent<Text>().text = GameTime.ToString("F0") + "秒";
+		TimeText.GetComponent<Text>().text = GameTime.ToString("F0");
 		GameTime -= Time.deltaTime;
 		GameObject catgene = GameObject.FindWithTag("Generator");
 		GameObject cat = GameObject.FindWithTag("cat");
 
+		catCountText.GetComponent<Text>().text = "残り " + catCount.ToString() + "回";
 		if(GameTime < 0.5f){
 			Destroy(catgene);
 			Destroy(cat);
@@ -36,17 +38,16 @@ public class GameDirector : MonoBehaviour {
 			RestartButton.SetActive(true);
 		}
 
-		if(Colors[2].activeSelf){
+		if(catCount == 0){
 			Destroy(catgene);
 			Destroy(cat);
 			TimeText.GetComponent<Text>().text = "Clear!";
-			Invoke("Clear", 1.0f);
+			Invoke("Clear", 0.5f);
 		}
 	}
 
 	public void GetCat(){
-		Colors[colorCount].SetActive(true);
-		colorCount++;
+		catCount--;
 	}
 
 	public void Restart(){
@@ -55,6 +56,6 @@ public class GameDirector : MonoBehaviour {
 
 	void Clear(){
 		//SceneManager.LoadScene("Clear");
-		Debug.Log("clear");
+		RestartButton.SetActive(true);
 	}
 }

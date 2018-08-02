@@ -7,6 +7,7 @@ TagManager:
   - cat
   - Generator
   - Director
+  - AR
   layers:
   - Default
   - TransparentFX

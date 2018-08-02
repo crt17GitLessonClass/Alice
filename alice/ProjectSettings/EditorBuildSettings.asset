@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Nagamine/Scene/ARcamera.unity
     guid: bb96f34d64e420d43aff63b129290bf7
+  - enabled: 1
+    path: Assets/Miyaguni/Scenes/Q3.unity
+    guid: 31a59ae93b0aa5d43a25ccfa25f0a9b3
+  - enabled: 1
+    path: Assets/Miyaguni/Scenes/Q3_game.unity
+    guid: ff4974d70793caf49a95ce2fa3979673
   m_configObjects: {}
