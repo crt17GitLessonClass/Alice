@@ -8,6 +8,8 @@ public class GameDirector : MonoBehaviour {
 	[SerializeField]
 	GameObject TimeText;
 	[SerializeField]
+	GameObject SecondText;
+	[SerializeField]
 	float GameTime;
 	[SerializeField]
 	int catCount;
@@ -31,9 +33,11 @@ public class GameDirector : MonoBehaviour {
 		GameObject cat = GameObject.FindWithTag("cat");
 
 		catCountText.GetComponent<Text>().text = "残り " + catCount.ToString() + "回";
+
 		if(GameTime < 0.5f){
 			Destroy(catgene);
 			Destroy(cat);
+			Destroy(SecondText);
 			TimeText.GetComponent<Text>().text = "Faild";
 			RestartButton.SetActive(true);
 		}
@@ -41,6 +45,7 @@ public class GameDirector : MonoBehaviour {
 		if(catCount == 0){
 			Destroy(catgene);
 			Destroy(cat);
+			Destroy(SecondText);
 			TimeText.GetComponent<Text>().text = "Clear!";
 			Invoke("Clear", 0.5f);
 		}
