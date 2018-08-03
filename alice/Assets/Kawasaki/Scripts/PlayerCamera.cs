@@ -20,7 +20,7 @@ public class PlayerCamera : MonoBehaviour {
     float Maxz = 0.5f;
 
     [SerializeField]
-    float y = 20;
+    float y = 10;
 
     void Start() {
         //Playerobj = GameObject.FindWithTag("Player");

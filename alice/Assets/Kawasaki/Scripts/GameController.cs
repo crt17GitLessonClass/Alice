@@ -9,15 +9,16 @@ public class GameController : MonoBehaviour {
 
     public bool clear = false;
     public bool gameover = false;
-
     public bool flag1 = true;
     public bool flag4 = false;
     public bool flag5 = false;
     public bool flag10 = false;
 
     public GameObject Playerobj;
+    public GameObject Retrybutton;
+  
 
-    float time = 10.0f;
+    float time = 60.0f;
     Text timeText;
 
     void Start() {
@@ -28,10 +29,14 @@ public class GameController : MonoBehaviour {
     }
 
     void Update() {
+
+        if (clear) { return; }
+
         if (time <= 0) {
             GameOver();
             return;
         }
+
 
         time -= Time.deltaTime;
         timeText.text = "残り" + time.ToString("F0") + "秒";
@@ -54,6 +59,10 @@ public class GameController : MonoBehaviour {
         //SceneManager.LoadScene("Clear");
         timeText.text = "Clear";
         clear = true;
+        Retrybutton.SetActive(true);
+
+
+
 
     }
 
@@ -61,7 +70,15 @@ public class GameController : MonoBehaviour {
         //SceneManager.LoadScene("GameOver");
         timeText.text = "GameOver";
         gameover = true;
+        Retrybutton.SetActive(true);
+
 
 
     }
+
+    public void RetryButton() {
+        SceneManager.LoadScene("Q4");
+    }
+
+
 }
