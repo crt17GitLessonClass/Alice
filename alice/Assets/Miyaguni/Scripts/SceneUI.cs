@@ -5,10 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class SceneUI : MonoBehaviour {
-	float textTransparency = 1.0f;
 	void Update(){
 		Text text = GetComponent<Text>();
-		text.color = new Color(0f, 0f, 0f, Mathf.Sin((textTransparency += Time.deltaTime) * 3f));
+		text.color = new Color(72f / 255f, 158f / 255f, 206f / 255f);
 		if(Input.touchCount > 0 || Input.GetMouseButton(0)){
 			GameStart();
 		}
