@@ -18,8 +18,8 @@ public class ARtouch : MonoBehaviour
                 //Debug.Log(hit.gameObject.name);
                 if(hit.collider.tag == "Alice")
                 {
-                    print("rayがAliceに当たった。");
-                    //SceneManager.LoadScene("Q3");
+                    //print("rayがAliceに当たった。");
+                    SceneManager.LoadScene("GameMain");
                 }
             }
         }
