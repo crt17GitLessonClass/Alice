@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Alice
+  - CutEnd
+  - Alice_golf
+  - Twins
+  - Cat
+  - WhiteRabbit
+  - Caterpillar
   layers:
   - Default
   - TransparentFX
