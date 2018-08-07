@@ -15,7 +15,7 @@ public class TitleCtrl : MonoBehaviour
     {
         if(Input.GetMouseButton(1))
         {
-            SceneManager.LoadScene("GameMain");
+            SceneManager.LoadScene("Tutorial");
         }
 		
 	}
