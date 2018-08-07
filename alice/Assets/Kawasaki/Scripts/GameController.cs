@@ -59,7 +59,7 @@ public class GameController : MonoBehaviour {
         //SceneManager.LoadScene("Clear");
         timeText.text = "Clear";
         clear = true;
-        Retrybutton.SetActive(true);
+        GameObject.Find("RetryButton").SetActive(true);
 
 
 
@@ -70,15 +70,14 @@ public class GameController : MonoBehaviour {
         //SceneManager.LoadScene("GameOver");
         timeText.text = "GameOver";
         gameover = true;
-        Retrybutton.SetActive(true);
+        GameObject.Find("RetryButton").SetActive(true);
+
 
 
 
     }
 
-    public void RetryButton() {
-        SceneManager.LoadScene("Q4");
-    }
+
 
 
 }
