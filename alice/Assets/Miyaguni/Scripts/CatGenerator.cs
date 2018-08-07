@@ -14,11 +14,10 @@ public class CatGenerator : MonoBehaviour {
 
     public void catgene() {
         int i = Random.Range(0, cats.Length);
-        int catCount = 0;
-        catCount--;
-        if(catCount <= 0){
-            Instantiate(cats[i], catPopPos[i], Quaternion.identity);
-            catCount = 1;
-        }
+        Instantiate(cats[i], catPopPos[i], Quaternion.identity);
+        // int catCount = 0;
+        // if(catCount <= 0){
+        //     Instantiate(cats[i], catPopPos[i], Quaternion.identity);
+        // }
     }
 }
