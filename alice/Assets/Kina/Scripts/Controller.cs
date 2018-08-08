@@ -5,8 +5,6 @@ using UnityEngine;
 public class Controller : MonoBehaviour {
 
 	public GameObject cameraObject;
-	public GameObject[] maruTrue;
-	public GameObject[] maruFalse;
 	public BoxCollider[] maruTrueCol;
 	public BoxCollider[] maruFalseCol;
 	public SpriteRenderer[] maruTrueSprite;
@@ -93,7 +91,7 @@ public class Controller : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-		int i = int.Parse(other.gameObject.tag);
+		int i = int.Parse(other.gameObject.name);
 		maruTrueCol[i].enabled = false;
 		maruFalseCol[i].enabled = false;
 		maruTrueSprite[i].enabled = true;
@@ -109,8 +107,8 @@ public class Controller : MonoBehaviour {
 
 	Vector3 LimitingPos(Vector3 pos){
 		pos.z = Mathf.Clamp(pos.z, cameraStartPos.z, -5);
-		pos.x = Mathf.Clamp(pos.x, -(22f / 25 * pos.z + 22f), 22f / 25 * pos.z + 22f);
-		pos.y = Mathf.Clamp(pos.y, -(15f / 25 * pos.z + 15f), 15f / 25 * pos.z + 15f);
+		pos.x = Mathf.Clamp(pos.x, -(22f / -cameraStartPos.z * pos.z + 22f), 22f / -cameraStartPos.z * pos.z + 22f);
+		pos.y = Mathf.Clamp(pos.y, -(15f / -cameraStartPos.z * pos.z + 15f), 15f / -cameraStartPos.z * pos.z + 15f);
 		return pos;
 	}
 }
