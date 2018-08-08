@@ -330,7 +330,7 @@ GameObject:
   - component: {fileID: 179881189}
   m_Layer: 0
   m_Name: Card5
-  m_TagString: card5
+  m_TagString: D_card5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 225767291}
   m_Layer: 0
   m_Name: Card10
-  m_TagString: card10
+  m_TagString: D_card10
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -724,7 +724,7 @@ GameObject:
   - component: {fileID: 709168161}
   m_Layer: 0
   m_Name: Card1
-  m_TagString: card1
+  m_TagString: D_card1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1735,7 +1735,7 @@ GameObject:
   - component: {fileID: 1863988772}
   m_Layer: 0
   m_Name: Card4
-  m_TagString: card4
+  m_TagString: D_card4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
