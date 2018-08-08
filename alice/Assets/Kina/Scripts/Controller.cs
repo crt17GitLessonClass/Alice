@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Controller : MonoBehaviour {
 
@@ -9,6 +10,8 @@ public class Controller : MonoBehaviour {
 	public BoxCollider[] maruFalseCol;
 	public SpriteRenderer[] maruTrueSprite;
 	public SpriteRenderer[] maruFalseSprite;
+	public Text timeText;
+	public Text mistakeCountText;
 
 	public int timeLimit = 60;
 
@@ -19,6 +22,7 @@ public class Controller : MonoBehaviour {
 
 	Vector2 pinchCenter;
 
+	int mistakeCount = 5;
 	float Dist;
 	float changingDist;
 
@@ -28,6 +32,8 @@ public class Controller : MonoBehaviour {
 	BoxCollider touchCol;
 
 	void Start(){
+		mistakeCountText.text = "あと" + mistakeCount + "こ";
+		timeText.text = "" + timeLimit;
 		StartCoroutine(CountDown());
 		cameraStartPos = cameraObject.transform.position;
 		Camera = cameraObject.GetComponent<Camera>();
@@ -96,12 +102,15 @@ public class Controller : MonoBehaviour {
 		maruFalseCol[i].enabled = false;
 		maruTrueSprite[i].enabled = true;
 		maruFalseSprite[i].enabled = true;
+		mistakeCount--;
+		mistakeCountText.text = "あと" + mistakeCount + "こ";
 	}
 
 	IEnumerator CountDown(){
 		for(int i = timeLimit; i >= 0; i--){
 			yield return new WaitForSeconds(1.0f);
 			timeLimit--;
+			timeText.text = "" + i;
 		}
 	}
 
