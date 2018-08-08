@@ -4,13 +4,17 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Alice
-  - CutEnd
-  - Alice_golf
-  - Twins
-  - Cat
-  - WhiteRabbit
-  - Caterpillar
+  - N_Alice
+  - N_CutEnd
+  - N_Alice_golf
+  - N_Twins
+  - N_Cat
+  - N_WhiteRabbit
+  - N_Caterpillar
+  - D_card5
+  - D_card10
+  - D_card1
+  - D_card4
   layers:
   - Default
   - TransparentFX
