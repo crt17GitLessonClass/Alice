@@ -15,6 +15,7 @@ TagManager:
   - D_card10
   - D_card1
   - D_card4
+  - m_cat
   layers:
   - Default
   - TransparentFX
