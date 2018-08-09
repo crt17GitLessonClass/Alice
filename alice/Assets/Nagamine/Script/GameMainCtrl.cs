@@ -5,17 +5,21 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameMainCtrl : MonoBehaviour
-{             
+{    
+    // タイマー表示
     public Text timer;
-    Text timertext;
-
+    Text timertext; 
     // ce = CutEnd = 切れはし
     public Text cutend;
     public static int ceNum = 0;
     public static int ceGet = 0;
+    // ゲームスタートフラグ 
+    public static bool f_gamestart = false;
+    public GameObject gameStartSet;
 
     public GameObject hintWindow;
 
+    
     //bool card1;
     //bool card4;                                
     //bool card5;
@@ -29,20 +33,23 @@ public class GameMainCtrl : MonoBehaviour
     void Start ()
     {                       
         timertext = timer.GetComponent<Text>();
+        hintWindow.SetActive(false);
         CutEndDisplay();
     }   	
 	
 	void Update ()
     {
         TimeDisplay();
-        //CutEndDisplay();
-
-        // デバッグ用
-        if (Input.GetMouseButtonDown(0))  
-            TimeCtrl.f_count = true;
-        if (Input.GetMouseButtonDown(1))
-            ceNum += 1;
+        //CutEndDisplay();           
     }  
+
+    public void GameStart()
+    {
+        // ゲームをスタートし、タイマーのカウントを開始。
+        gameStartSet.SetActive(false);
+        f_gamestart = true;
+        TimeCtrl.f_count = true;
+    }
     
     void TimeDisplay()
     {                 
