@@ -26,5 +26,5 @@ public class TimeCtrl : MonoBehaviour
     void Timer()
     {
         countTime -= Time.deltaTime;        
-    }
+    }     
 }
