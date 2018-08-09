@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Controller : MonoBehaviour {
 
 	public GameObject cameraObject;
-	public GameObject[] maruTrue;
-	public GameObject[] maruFalse;
 	public BoxCollider[] maruTrueCol;
 	public BoxCollider[] maruFalseCol;
 	public SpriteRenderer[] maruTrueSprite;
 	public SpriteRenderer[] maruFalseSprite;
+	public Text timeText;
+	public Text mistakeCountText;
 
 	public int timeLimit = 60;
 
@@ -21,6 +22,7 @@ public class Controller : MonoBehaviour {
 
 	Vector2 pinchCenter;
 
+	int mistakeCount = 5;
 	float Dist;
 	float changingDist;
 
@@ -30,6 +32,8 @@ public class Controller : MonoBehaviour {
 	BoxCollider touchCol;
 
 	void Start(){
+		mistakeCountText.text = "あと" + mistakeCount + "こ";
+		timeText.text = "" + timeLimit;
 		StartCoroutine(CountDown());
 		cameraStartPos = cameraObject.transform.position;
 		Camera = cameraObject.GetComponent<Camera>();
@@ -93,24 +97,27 @@ public class Controller : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-		int i = int.Parse(other.gameObject.tag);
+		int i = int.Parse(other.gameObject.name);
 		maruTrueCol[i].enabled = false;
 		maruFalseCol[i].enabled = false;
 		maruTrueSprite[i].enabled = true;
 		maruFalseSprite[i].enabled = true;
+		mistakeCount--;
+		mistakeCountText.text = "あと" + mistakeCount + "こ";
 	}
 
 	IEnumerator CountDown(){
 		for(int i = timeLimit; i >= 0; i--){
 			yield return new WaitForSeconds(1.0f);
 			timeLimit--;
+			timeText.text = "" + i;
 		}
 	}
 
 	Vector3 LimitingPos(Vector3 pos){
 		pos.z = Mathf.Clamp(pos.z, cameraStartPos.z, -5);
-		pos.x = Mathf.Clamp(pos.x, -(22f / 25 * pos.z + 22f), 22f / 25 * pos.z + 22f);
-		pos.y = Mathf.Clamp(pos.y, -(15f / 25 * pos.z + 15f), 15f / 25 * pos.z + 15f);
+		pos.x = Mathf.Clamp(pos.x, -(22f / -cameraStartPos.z * pos.z + 22f), 22f / -cameraStartPos.z * pos.z + 22f);
+		pos.y = Mathf.Clamp(pos.y, -(15f / -cameraStartPos.z * pos.z + 15f), 15f / -cameraStartPos.z * pos.z + 15f);
 		return pos;
 	}
 }
