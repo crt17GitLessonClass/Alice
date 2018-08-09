@@ -18,7 +18,7 @@ public class MobileKeyboardControl : MonoBehaviour {
 
         if (!keyboard.active) {
             if (keyboard.text == "ウサギ" || keyboard.text == "うさぎ") {
-               // SceneManager.LoadScene("");
+                SceneManager.LoadScene("CutEnd");
                
 
             } else {
