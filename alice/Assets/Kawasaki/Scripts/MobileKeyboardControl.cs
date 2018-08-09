@@ -1,16 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class MobileKeyboardControl : MonoBehaviour {
+
     TouchScreenKeyboard keyboard;
-    public Text inputText;
 
 
     void Start() {
-       // keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default);
-
+        //keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default);
 
     }
 
@@ -18,18 +18,19 @@ public class MobileKeyboardControl : MonoBehaviour {
 
         if (!keyboard.active) {
             if (keyboard.text == "ウサギ" || keyboard.text == "うさぎ") {
-                inputText.text = "正解";
+               // SceneManager.LoadScene("");
+               
 
             } else {
-                inputText.text = "不正解";
-                TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default);
+                print("不正解");
+                //TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default);
 
             }
         }
     }
 
     public void OpenKeyboard() {
-        TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default);
+        keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default);
 
 
     }
