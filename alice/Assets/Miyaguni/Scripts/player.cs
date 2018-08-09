@@ -20,7 +20,7 @@ public class player : MonoBehaviour {
 	}
 
 	IEnumerator bc2dEnabl(BoxCollider2D BC2D){
-		yield return new WaitForSeconds(0.1f);
+		yield return new WaitForSeconds(0.3f);
 		BC2D.enabled = false;
 	}
 }
