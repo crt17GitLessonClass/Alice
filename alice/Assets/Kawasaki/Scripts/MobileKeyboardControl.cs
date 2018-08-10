@@ -2,15 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class MobileKeyboardControl : MonoBehaviour {
 
     TouchScreenKeyboard keyboard;
+    public Text test;
+    int cutend = 4;
+    
 
 
     void Start() {
         //keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default);
+        
 
     }
 
@@ -18,12 +23,14 @@ public class MobileKeyboardControl : MonoBehaviour {
 
         if (!keyboard.active) {
             if (keyboard.text == "ウサギ" || keyboard.text == "うさぎ") {
+                test.GetComponent<Text>().text = "正解";
+                GameMainCtrl.ceGet += cutend;
                 SceneManager.LoadScene("CutEnd");
                
 
             } else {
-                print("不正解");
                 //TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default);
+                test.GetComponent<Text>().text = "不正解";
 
             }
         }
