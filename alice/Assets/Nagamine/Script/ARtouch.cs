@@ -25,7 +25,7 @@ public class ARtouch : MonoBehaviour
                 case "N_Alice":
                     //print("rayがAliceに当たった。");
                     Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
-                    //SceneManager.LoadScene("GameMain");    
+                    SceneManager.LoadScene("GameMain");    
                     break;
 
                 case "N_CutEnd":

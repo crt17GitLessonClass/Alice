@@ -11,19 +11,19 @@ public class cat : MonoBehaviour {
 
 	void Start(){
 		sr = GetComponent<SpriteRenderer>();
-		sr.color = new Color(1.0f, 1.0f, 1.0f, 0);
+		sr.color = new Color(1.0f, 1.0f, 1.0f, 0f);
 		//猫の速度判定
 		GameObject gameDirector = GameObject.Find("GameDirector");
 		int catC = gameDirector.GetComponent<GameDirector>().catCount;
 		if(catC==3){
 			catLife = 1f;
-			catTransparencySpeed = 0.8f;
+			catTransparencySpeed = 1f;
 		}else if(catC == 2){
-			catLife = 0.8f;
-			catTransparencySpeed = 1.2f;
+			catLife = 0.75f;
+			catTransparencySpeed = 1.3f;
 		}else{
-			catLife = 0.5f;
-			catTransparencySpeed = 2f;
+			catLife = 0.6f;
+			catTransparencySpeed = 1.6f;
 		}
 	}
 	
@@ -33,18 +33,20 @@ public class cat : MonoBehaviour {
 		catLife -= Time.deltaTime;
 		catTransparency += Time.deltaTime * catTransparencySpeed;
 		CapsuleCollider2D cc2d = GetComponent<CapsuleCollider2D>();
-		if(catTransparency < 0.2f||catTransparency > 0.7f){
+		if(catTransparency < 0.3f||catTransparency > 0.65f){
 			cc2d.enabled = false;
 		}else{
 			cc2d.enabled = true;
 		}
 
-		sr.color = new Color(1.0f,1.0f,1.0f,Mathf.Sin(180 * catTransparency * Mathf.Deg2Rad));
+		sr.color = new Color(1.0f,1.0f,1.0f,Mathf.Sin(255 * catTransparency * Mathf.Deg2Rad));
 		if(catLife < 0){
 			GameObject catgene = GameObject.Find("CatGenerator");
 			catgene.GetComponent<CatGenerator>().catgene();
 			Destroy(gameObject);
 		}
+		Debug.Log(catTransparency);
+
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
