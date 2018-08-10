@@ -35,6 +35,8 @@ public class GameMainCtrl : MonoBehaviour
         timertext = timer.GetComponent<Text>();
         hintWindow.SetActive(false);
         CutEndDisplay();
+        if(f_gamestart)
+            gameStartSet.SetActive(false);
     }   	
 	
 	void Update ()
