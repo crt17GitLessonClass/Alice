@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class Controller : MonoBehaviour {
 
 	public GameObject cameraObject;
@@ -76,7 +76,7 @@ public class Controller : MonoBehaviour {
 				pinchCenter = (touchPos1 + touchPos2) / 2;
 				movingCenter = cameraObject.transform.position;
 				Dist = changingDist;
-				targetPos = Camera.ScreenToWorldPoint(new Vector3(pinchCenter.x, pinchCenter.y, 0 - cameraObject.transform.position.z));
+				targetPos = Camera.ScreenToWorldPoint(new Vector3(pinchCenter.x, pinchCenter.y, -cameraObject.transform.position.z));
 				cameraMoving = true;
 			}
 			if(t1.phase == TouchPhase.Ended || t2.phase == TouchPhase.Ended){
