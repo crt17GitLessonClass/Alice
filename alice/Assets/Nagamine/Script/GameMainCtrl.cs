@@ -18,17 +18,25 @@ public class GameMainCtrl : MonoBehaviour
     public GameObject gameStartSet;
     // ヒントウィンドウ    
     public GameObject[] hinttext = new GameObject[6];
-    public GameObject hintclose;  
+    public GameObject hintclose;
+    // ms = Musical score = 楽譜  // 楽譜ゲットするためのフラグ
+    public GameObject ms;
+    bool f_ms0;
+    bool f_ms1;
+    bool f_ms2;
+    bool f_ms3;
+    bool f_ms4;
+    bool f_ms5;
 
-    //bool card1;
-    //bool card4;                                
-    //bool card5;
-    //bool card10;
-    //bool Q2;
-    //bool Q3;
-    //bool Q4;
-    //bool Q5;
-    //bool Q6;
+    //public static bool f_card1;
+    //public static bool f_card4;
+    //public static bool f_card5;
+    //public static bool f_card10;
+    //public static bool f_Q2;
+    //public static bool f_Q3;
+    //public static bool f_Q4;
+    //public static bool f_Q5;
+    //public static bool f_Q6;
 
     void Start ()
     {                       
@@ -39,12 +47,14 @@ public class GameMainCtrl : MonoBehaviour
         if(f_gamestart)
             gameStartSet.SetActive(false);
         CutEndDisplay();
-    }   	
+        MSreset();
+        ms.SetActive(false);
+    }       
 	
 	void Update ()
     {
         TimeDisplay();                 
-    }  
+    }       
 
     public void GameStart()
     {
@@ -93,34 +103,36 @@ public class GameMainCtrl : MonoBehaviour
 
         switch (num)
         {
-            case 0:                  
+            case 0:　//青                 
                 hinttext[0].SetActive(true);                 
                 break;
 
-            case 1:                  
+            case 1:　//赤                  
                 hinttext[1].SetActive(true);
                 break;
 
-            case 2:                
+            case 2:　//黄                
                 hinttext[2].SetActive(true);
                 break;
 
-            case 3:                   
+            case 3:　//緑                   
                 hinttext[3].SetActive(true);
                 break;
 
-            case 4:
+            case 4:　//紫
                 hinttext[4].SetActive(true);
                 break;
 
-            case 5:
+            case 5:　//橙
                 hinttext[5].SetActive(true);
                 break;
 
             default:
                 break;
         }
-        hintclose.SetActive(true);          
+        hintclose.SetActive(true);
+
+        MSflag(num);
     }
 
     // ヒントウィンドウの非表示
@@ -129,5 +141,63 @@ public class GameMainCtrl : MonoBehaviour
         GameObject hintObj = GameObject.FindGameObjectWithTag("N_HintWindow");
         hintObj.SetActive(false);
         hintclose.SetActive(false);
+    }
+
+    void MSflag(int num)
+    {
+        if (f_ms0 && num == 0)
+        {
+            f_ms0 = false;
+            f_ms1 = true;
+        }
+        else if (f_ms1 && num == 1)
+        {
+            f_ms1 = false;
+            f_ms2 = true;
+        }
+        else if (f_ms2 && num == 2)
+        {
+            f_ms2 = false;
+            f_ms3 = true;
+        }
+        else if (f_ms3 && num == 3)
+        {
+            f_ms3 = false;
+            f_ms4 = true;
+        }
+        else if (f_ms4 && num == 4)
+        {
+            f_ms4 = false;
+            f_ms5 = true;
+        }
+        else if (f_ms5 && num == 5)
+        {
+            f_ms5 = false;
+            MSon();
+        }
+        else
+        {
+            MSreset();
+        }
+    }
+
+    void MSreset()
+    {
+        f_ms0 = true;
+        f_ms1 = false;
+        f_ms2 = false;
+        f_ms3 = false;
+        f_ms4 = false;
+        f_ms5 = false;
+    } 
+    
+    public void MSon()
+    {
+        ms.SetActive(true);
+    }
+
+    public void MScloseButton()
+    {
+        ms.SetActive(false);
     }
 }   
