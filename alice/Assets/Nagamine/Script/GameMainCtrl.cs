@@ -17,7 +17,8 @@ public class GameMainCtrl : MonoBehaviour
     public static bool f_gamestart = false;
     public GameObject gameStartSet;
 
-    public GameObject hintWindow;
+    public GameObject hintwindow;
+    public GameObject[] hinttext = new GameObject[6];
 
     
     //bool card1;
@@ -33,10 +34,12 @@ public class GameMainCtrl : MonoBehaviour
     void Start ()
     {                       
         timertext = timer.GetComponent<Text>();
-        hintWindow.SetActive(false);
-        CutEndDisplay();
+        hintwindow.SetActive(false);
+        for(int i = 0; i < hinttext.Length; i++)              
+            hinttext[i].SetActive(false);           
         if(f_gamestart)
             gameStartSet.SetActive(false);
+        CutEndDisplay();
     }   	
 	
 	void Update ()
@@ -79,17 +82,53 @@ public class GameMainCtrl : MonoBehaviour
         SceneManager.LoadScene("ARcamera");
     }
 
-    public void HintWindow()
-    {
-        if(hintWindow.activeSelf)
+    public void HintWindow(int num)
+    {                  
+        for (int i = 0; i < hinttext.Length; i++)
+            hinttext[i].SetActive(false);
+
+        switch (num)
         {
-            //hintWindow.SetActive(true);
-            print(hintWindow.activeSelf);
+            case 0:
+                //hintwindow.SetActive(true);
+                hinttext[0].SetActive(true);
+                
+                break;
+
+            case 1:
+                //hintwindow.SetActive(true);
+                hinttext[1].SetActive(true);
+                break;
+
+            case 2:                
+                hinttext[2].SetActive(true);
+                break;
+
+            case 3:                   
+                hinttext[3].SetActive(true);
+                break;
+
+            case 4:
+                hinttext[4].SetActive(true);
+                break;
+
+            case 5:
+                hinttext[5].SetActive(true);
+                break;
+
+            default:
+                break;
         }
-        else
-        {
-            print(hintWindow.activeSelf);
-            hintWindow.SetActive(true);
-        }
+
+        GameObject aaa = hinttext[num];
+        StartCoroutine("Aaa", aaa);
     }
-}
+
+    IEnumerator Aaa(GameObject hint)
+    {
+        print(hint);
+        yield return new WaitForSeconds(5.0f);
+        //hintwindow.SetActive(false);
+        hint.SetActive(false);        
+    }
+}   
