@@ -16,11 +16,10 @@ public class GameMainCtrl : MonoBehaviour
     // ゲームスタートフラグ 
     public static bool f_gamestart = false;
     public GameObject gameStartSet;
-
-    public GameObject hintwindow;
+    // ヒントウィンドウ    
     public GameObject[] hinttext = new GameObject[6];
+    public GameObject hintclose;  
 
-    
     //bool card1;
     //bool card4;                                
     //bool card5;
@@ -30,11 +29,11 @@ public class GameMainCtrl : MonoBehaviour
     //bool Q4;
     //bool Q5;
     //bool Q6;
-    
+
     void Start ()
     {                       
         timertext = timer.GetComponent<Text>();
-        hintwindow.SetActive(false);
+        hintclose.SetActive(false);
         for(int i = 0; i < hinttext.Length; i++)              
             hinttext[i].SetActive(false);           
         if(f_gamestart)
@@ -44,8 +43,7 @@ public class GameMainCtrl : MonoBehaviour
 	
 	void Update ()
     {
-        TimeDisplay();
-        //CutEndDisplay();           
+        TimeDisplay();                 
     }  
 
     public void GameStart()
@@ -56,6 +54,7 @@ public class GameMainCtrl : MonoBehaviour
         TimeCtrl.f_count = true;
     }
     
+    // タイマーの表示
     void TimeDisplay()
     {                 
         int minute = (int)TimeCtrl.countTime / 60;
@@ -72,31 +71,33 @@ public class GameMainCtrl : MonoBehaviour
             timertext.text = minute.ToString("F0") + " : " + second.ToString("F0");   
     }
 
+    // ページの切れ端の表示
     void CutEndDisplay()
     {
         cutend.GetComponent<Text>().text = ceNum.ToString();
     }
 
+    // ARカメラ
     public void ARcamera()
     {
         SceneManager.LoadScene("ARcamera");
     }
 
+    // ヒントウィンドウの表示
     public void HintWindow(int num)
-    {                  
+    {
+        // for文 findでいい気がする
+        hintclose.SetActive(false);
         for (int i = 0; i < hinttext.Length; i++)
             hinttext[i].SetActive(false);
 
         switch (num)
         {
-            case 0:
-                //hintwindow.SetActive(true);
-                hinttext[0].SetActive(true);
-                
+            case 0:                  
+                hinttext[0].SetActive(true);                 
                 break;
 
-            case 1:
-                //hintwindow.SetActive(true);
+            case 1:                  
                 hinttext[1].SetActive(true);
                 break;
 
@@ -119,16 +120,14 @@ public class GameMainCtrl : MonoBehaviour
             default:
                 break;
         }
-
-        GameObject aaa = hinttext[num];
-        StartCoroutine("Aaa", aaa);
+        hintclose.SetActive(true);          
     }
 
-    IEnumerator Aaa(GameObject hint)
+    // ヒントウィンドウの非表示
+    public void HintCloseButton()
     {
-        print(hint);
-        yield return new WaitForSeconds(5.0f);
-        //hintwindow.SetActive(false);
-        hint.SetActive(false);        
+        GameObject hintObj = GameObject.FindGameObjectWithTag("N_HintWindow");
+        hintObj.SetActive(false);
+        hintclose.SetActive(false);
     }
 }   
