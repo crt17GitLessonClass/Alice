@@ -30,6 +30,7 @@ public class GameMainCtrl : MonoBehaviour
     bool f_ms5;
     public static bool f_msButton = false;
     // ARマーカーのフラグ
+    public static bool f_alice = false;
     public static bool f_card1 = false;
     public static bool f_card4 = false;
     public static bool f_card5 = false;
