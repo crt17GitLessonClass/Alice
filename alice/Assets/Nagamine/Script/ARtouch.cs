@@ -32,7 +32,21 @@ public class ARtouch : MonoBehaviour
                     SceneManager.LoadScene("GameMain");    
                     break;
 
-                case "N_CutEnd":
+                case "N_Card1":
+                    Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
+                    // 切れ端をgetした時の処理 
+                    if(!GameMainCtrl.f_card1)
+                    {
+                        GameMainCtrl.f_card1 = true;
+                        //print(GameMainCtrl.f_card1);
+
+                        ceGet_num += 1;
+                        GameMainCtrl.ceGet += ceGet_num;
+                        SceneManager.LoadScene("CutEnd");
+                    }                                 
+                    break;
+
+                case "N_Card4":
                     Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
                     // 切れ端をgetした時の処理 
                     ceGet_num += 1;
@@ -40,7 +54,23 @@ public class ARtouch : MonoBehaviour
                     SceneManager.LoadScene("CutEnd");
                     break;
 
-                case "N_CutEnd4":
+                case "N_Card5":
+                    Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
+                    // 切れ端をgetした時の処理 
+                    ceGet_num += 1;
+                    GameMainCtrl.ceGet += ceGet_num;
+                    SceneManager.LoadScene("CutEnd");
+                    break;
+
+                case "N_Card10":
+                    Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
+                    // 切れ端をgetした時の処理 
+                    ceGet_num += 1;
+                    GameMainCtrl.ceGet += ceGet_num;
+                    SceneManager.LoadScene("CutEnd");
+                    break;
+
+                case "N_Butterfly":
                     Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
                     ceGet_num += 4;
                     GameMainCtrl.ceGet += ceGet_num;

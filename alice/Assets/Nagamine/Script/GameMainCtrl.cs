@@ -29,16 +29,17 @@ public class GameMainCtrl : MonoBehaviour
     bool f_ms4;
     bool f_ms5;
     public static bool f_msButton = false;
-
-    //public static bool f_card1;
-    //public static bool f_card4;
-    //public static bool f_card5;
-    //public static bool f_card10;
-    //public static bool f_Q2;
-    //public static bool f_Q3;
-    //public static bool f_Q4;
-    //public static bool f_Q5;
-    //public static bool f_Q6;
+    // ARマーカーのフラグ
+    public static bool f_card1 = false;
+    public static bool f_card4 = false;
+    public static bool f_card5 = false;
+    public static bool f_card10 = false;
+    public static bool f_butterfly = false;
+    public static bool f_Q2 = false;
+    public static bool f_Q3 = false;
+    public static bool f_Q4 = false;
+    public static bool f_Q5 = false;
+    public static bool f_Q6 = false;
 
     void Start ()
     {                       
@@ -57,6 +58,8 @@ public class GameMainCtrl : MonoBehaviour
         //    msButton.SetActive(true);
         if (!f_msButton)
             msButton.SetActive(false);
+
+        //print(f_card1);
     }
 
     void Update ()

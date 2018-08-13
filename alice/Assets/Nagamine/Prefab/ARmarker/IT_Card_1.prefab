@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 65136857302155016}
   m_Layer: 0
   m_Name: AR_CutEnd
-  m_TagString: N_CutEnd
+  m_TagString: N_Card1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,7 +69,7 @@ Transform:
   m_GameObject: {fileID: 1862189126636506}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 15.945679, y: 15.945679, z: 15.945679}
+  m_LocalScale: {x: 16.6, y: 16.6, z: 16.6}
   m_Children:
   - {fileID: 4152726523135268}
   m_Father: {fileID: 0}
@@ -140,15 +140,15 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: Card_1
+  mTrackableName: 01_CardGamesHeart
   mPreserveChildSize: 0
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/AliceMarker.xml
   mExtendedTracking: 0
-  mAspectRatio: 1.5945679
+  mAspectRatio: 1.6600001
   mImageTargetType: 0
   mWidth: 10
-  mHeight: 15.945679
+  mHeight: 16.6
 --- !u!114 &114660422511889204
 MonoBehaviour:
   m_ObjectHideFlags: 1

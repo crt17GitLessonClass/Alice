@@ -18,6 +18,11 @@ TagManager:
   - m_cat
   - N_CutEnd4
   - N_HintWindow
+  - N_Card1
+  - N_Card4
+  - N_Card5
+  - N_Card10
+  - N_Butterfly
   layers:
   - Default
   - TransparentFX
