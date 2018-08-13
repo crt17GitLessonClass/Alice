@@ -16,6 +16,8 @@ TagManager:
   - D_card1
   - D_card4
   - m_cat
+  - N_CutEnd4
+  - N_HintWindow
   layers:
   - Default
   - TransparentFX
