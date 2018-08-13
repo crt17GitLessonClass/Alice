@@ -9,7 +9,6 @@ public class GameMaster : MonoBehaviour {
 	[SerializeField]
 	GameObject CountDownText;
 	float countDown;
-	float textTransparency = 1.0f;
 
 	void Start () {
 		for(int i = 0; i < objects.Length; i++){
@@ -20,21 +19,17 @@ public class GameMaster : MonoBehaviour {
 	
 	void Update () {
 		countDown -= Time.deltaTime;
-		CountDownText.GetComponent<Text>().text = countDown.ToString("F0");
-		if(countDown < 0.5f){
-			CountDownText.GetComponent<Text>().text = "スタート!";
-			Text text = CountDownText.GetComponent<Text>();
-			text.color = new Color((72f / 255f) , (158f / 255f), (206f / 255f), textTransparency -= Time.deltaTime);
-			if(textTransparency <= 0){
-				for(int i = 0; i < objects.Length; i++){
-					objects[i].SetActive(true);
-				}
-				destroyObject();
-			}
-		}
-	}
+		Text CDText = CountDownText.GetComponent<Text>();
+		CDText.text = countDown.ToString("F0");
 
-	void destroyObject(){
-		Destroy(gameObject);
+		if(countDown < -0.5f){
+			CDText.color = new Color((72f / 255f) , (158f / 255f), (206f / 255f), 0f);
+			for(int i = 0; i < objects.Length; i++){
+					objects[i].SetActive(true);
+			}
+			Destroy(gameObject);
+		}else if(countDown < 0.5f){
+			CDText.text = "スタート!";
+		}
 	}
 }

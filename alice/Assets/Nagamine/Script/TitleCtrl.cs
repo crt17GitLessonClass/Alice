@@ -13,7 +13,7 @@ public class TitleCtrl : MonoBehaviour
 
 	void Update ()
     {
-        if(Input.GetMouseButton(1))
+        if(Input.GetMouseButton(0))
         {
             SceneManager.LoadScene("Tutorial");
         }

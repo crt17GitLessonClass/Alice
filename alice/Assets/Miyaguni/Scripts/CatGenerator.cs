@@ -13,11 +13,8 @@ public class CatGenerator : MonoBehaviour {
 	}
 
     public void catgene() {
+        //猫の種類と生成場所を決定して生成
         int i = Random.Range(0, cats.Length);
         Instantiate(cats[i], catPopPos[i], Quaternion.identity);
-        // int catCount = 0;
-        // if(catCount <= 0){
-        //     Instantiate(cats[i], catPopPos[i], Quaternion.identity);
-        // }
     }
 }
