@@ -265,7 +265,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &138301195
 MonoBehaviour:
@@ -1525,6 +1525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd7a292d093302048ac88592f18dc465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backButton: {fileID: 650993152}
 --- !u!4 &1025482520
 Transform:
   m_ObjectHideFlags: 0
@@ -1536,7 +1537,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!21 &1114916294
 Material:
@@ -3077,7 +3078,7 @@ RectTransform:
   - {fileID: 372727713}
   - {fileID: 650993153}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
