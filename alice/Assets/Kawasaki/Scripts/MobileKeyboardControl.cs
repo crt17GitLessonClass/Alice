@@ -25,6 +25,7 @@ public class MobileKeyboardControl : MonoBehaviour {
             if (keyboard.text == "ウサギ" || keyboard.text == "うさぎ") {
                 test.GetComponent<Text>().text = "正解";
                 GameMainCtrl.ceGet += cutend;
+                GameMainCtrl.f_Q5 = true;
                 SceneManager.LoadScene("CutEnd");
                
 
