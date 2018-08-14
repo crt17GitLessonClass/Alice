@@ -21,22 +21,26 @@ public class GameMainCtrl : MonoBehaviour
     public GameObject hintclose;
     // ms = Musical score = 楽譜  // 楽譜ゲットするためのフラグ
     public GameObject ms;
+    public GameObject msButton;
     bool f_ms0;
     bool f_ms1;
     bool f_ms2;
     bool f_ms3;
     bool f_ms4;
     bool f_ms5;
-
-    //public static bool f_card1;
-    //public static bool f_card4;
-    //public static bool f_card5;
-    //public static bool f_card10;
-    //public static bool f_Q2;
-    //public static bool f_Q3;
-    //public static bool f_Q4;
-    //public static bool f_Q5;
-    //public static bool f_Q6;
+    public static bool f_msButton = false;
+    // ARマーカーのフラグ
+    public static bool f_alice = false;
+    public static bool f_card1 = false;
+    public static bool f_card4 = false;
+    public static bool f_card5 = false;
+    public static bool f_card10 = false;
+    public static bool f_butterfly = false;
+    public static bool f_Q2 = false;
+    public static bool f_Q3 = false;
+    public static bool f_Q4 = false;
+    public static bool f_Q5 = false;
+    public static bool f_Q6 = false;
 
     void Start ()
     {                       
@@ -49,9 +53,17 @@ public class GameMainCtrl : MonoBehaviour
         CutEndDisplay();
         MSreset();
         ms.SetActive(false);
-    }       
-	
-	void Update ()
+        //if (!f_msButton)
+        //    msButton.SetActive(false);
+        //else
+        //    msButton.SetActive(true);
+        if (!f_msButton)
+            msButton.SetActive(false);
+
+        //print(f_card1);
+    }
+
+    void Update ()
     {
         TimeDisplay();                 
     }       
@@ -103,27 +115,27 @@ public class GameMainCtrl : MonoBehaviour
 
         switch (num)
         {
-            case 0:　//青                 
+            case 0:　//赤                 
                 hinttext[0].SetActive(true);                 
                 break;
 
-            case 1:　//赤                  
+            case 1:　//青                  
                 hinttext[1].SetActive(true);
                 break;
 
-            case 2:　//黄                
+            case 2:　//紫                
                 hinttext[2].SetActive(true);
                 break;
 
-            case 3:　//緑                   
+            case 3:　//橙                   
                 hinttext[3].SetActive(true);
                 break;
 
-            case 4:　//紫
+            case 4:　//黄
                 hinttext[4].SetActive(true);
                 break;
 
-            case 5:　//橙
+            case 5:　//緑
                 hinttext[5].SetActive(true);
                 break;
 
@@ -145,34 +157,36 @@ public class GameMainCtrl : MonoBehaviour
 
     void MSflag(int num)
     {
-        if (f_ms0 && num == 0)
+        if (f_ms0 && num == 1)
         {
             f_ms0 = false;
             f_ms1 = true;
         }
-        else if (f_ms1 && num == 1)
+        else if (f_ms1 && num == 0)
         {
             f_ms1 = false;
             f_ms2 = true;
         }
-        else if (f_ms2 && num == 2)
+        else if (f_ms2 && num == 4)
         {
             f_ms2 = false;
             f_ms3 = true;
         }
-        else if (f_ms3 && num == 3)
+        else if (f_ms3 && num == 5)
         {
             f_ms3 = false;
             f_ms4 = true;
         }
-        else if (f_ms4 && num == 4)
+        else if (f_ms4 && num == 2)
         {
             f_ms4 = false;
             f_ms5 = true;
         }
-        else if (f_ms5 && num == 5)
+        else if (f_ms5 && num == 3)
         {
             f_ms5 = false;
+            f_msButton = true;
+            msButton.SetActive(true);
             MSon();
         }
         else
