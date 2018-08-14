@@ -16,6 +16,8 @@ public class GameController : MonoBehaviour {
 
     public GameObject Playerobj;
     public GameObject Retrybutton;
+
+    private int cutend = 3;
   
 
     float time = 60.0f;
@@ -59,6 +61,8 @@ public class GameController : MonoBehaviour {
         //SceneManager.LoadScene("Clear");
         timeText.text = "Clear";
         clear = true;
+        GameMainCtrl.ceGet += cutend;
+        GameMainCtrl.f_Q4 = true;
         GameObject.Find("RetryButton").SetActive(true);
 
 
