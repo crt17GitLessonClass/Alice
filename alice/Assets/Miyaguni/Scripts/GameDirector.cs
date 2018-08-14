@@ -66,7 +66,6 @@ public class GameDirector : MonoBehaviour {
 	}
 
 	void CatClear(){
-		Text time = TimeText.GetComponent<Text>();
 		Text cdText = CountDownText.GetComponent<Text>();
 		cdText.color = new Color((72f / 255f) , (158f / 255f), (206f / 255f), 255f);
 		cdText.text = "ゲームクリア!";
