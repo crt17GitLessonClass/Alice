@@ -63,7 +63,8 @@ public class GameController : MonoBehaviour {
         clear = true;
         GameMainCtrl.ceGet += cutend;
         GameMainCtrl.f_Q4 = true;
-        GameObject.Find("RetryButton").SetActive(true);
+        //GameObject.Find("RetryButton").SetActive(true);
+        SceneManager.LoadScene("CutEnd");
 
 
     }
