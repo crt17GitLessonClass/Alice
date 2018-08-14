@@ -17,6 +17,11 @@ public class GameDirector : MonoBehaviour {
 	GameObject RestartButton;
 	[SerializeField]
 	GameObject ExitButton;
+	[SerializeField]
+	GameObject catgene;
+	[SerializeField]
+	GameObject CountDownText;
+	GameObject cat;
 
 	void Start () {
 		GameTime = 60.0f;
@@ -26,31 +31,34 @@ public class GameDirector : MonoBehaviour {
 	}
 	
 	void FixedUpdate () {
+		cat = GameObject.FindWithTag("m_cat");
 		GameTime = Mathf.Clamp(GameTime, 0.0f, 60.0f);
 		Text time = TimeText.GetComponent<Text>();
 		time.text = GameTime.ToString("F0");
 		GameTime -= Time.deltaTime;
-		GameObject catgene = GameObject.Find("GameGenerator");
-		GameObject cat = GameObject.FindWithTag("m_cat");
 		catCountText.GetComponent<Text>().text = "残り " + catCount.ToString() + "回";
-		GameObject CountDownText = GameObject.Find("CountDownText");
 		Text cdText = CountDownText.GetComponent<Text>();
 
 		if(GameTime < 0.5f){
 			cdText.color = new Color((72f / 255f) , (158f / 255f), (206f / 255f), 255f);
 			cdText.text = "ゲームオーバー";
-			Destroy(catgene);
 			Destroy(cat);
+			Destroy(catgene);
 			Destroy(SecondText);
 			time.text = "";
 			RestartButton.SetActive(true);
 			ExitButton.SetActive(true);
 		}
+
+		if(catCount == 0){
+			Destroy(cat);
+			time.text = "捕まえた!";
+		}
 	}
 
 	public void GetCat(){
 		catCount--;
-		if(catCount==0){
+		if(catCount == 0){
 			CatClear();
 		}
 		AudioSource AS = GetComponent<AudioSource>();
@@ -59,17 +67,12 @@ public class GameDirector : MonoBehaviour {
 
 	void CatClear(){
 		Text time = TimeText.GetComponent<Text>();
-		GameObject catgene = GameObject.Find("GameGenerator");
-		GameObject cat = GameObject.FindWithTag("m_cat");
-		GameObject CountDownText = GameObject.Find("CountDownText");
 		Text cdText = CountDownText.GetComponent<Text>();
-
 		cdText.color = new Color((72f / 255f) , (158f / 255f), (206f / 255f), 255f);
 		cdText.text = "ゲームクリア!";
-		Destroy(catgene);
 		Destroy(cat);
+		Destroy(catgene);
 		Destroy(SecondText);
-		time.text = "捕まえた!";
 		GameMainCtrl.ceGet += 2;
 		GameMainCtrl.f_Q6 = true;
 		Invoke("Clear", 1.0f);

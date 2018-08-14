@@ -599,6 +599,8 @@ MonoBehaviour:
   catCountText: {fileID: 1691107913}
   RestartButton: {fileID: 2079058890}
   ExitButton: {fileID: 2041740628}
+  catgene: {fileID: 1929186987}
+  CountDownText: {fileID: 974993187}
 --- !u!82 &1084173020
 AudioSource:
   m_ObjectHideFlags: 0
