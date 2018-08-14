@@ -55,12 +55,15 @@ public class GameDirector : MonoBehaviour {
 			Destroy(SecondText);
 			time.text = "捕まえた!";
 			GameMainCtrl.ceGet += 2;
+			GameMainCtrl.f_Q6 = true;
 			Invoke("Clear", 1.0f);
 		}
 	}
 
 	public void GetCat(){
 		catCount--;
+		AudioSource AS = GetComponent<AudioSource>();
+		AS.Play();
 	}
 
 	public void Restart(){
