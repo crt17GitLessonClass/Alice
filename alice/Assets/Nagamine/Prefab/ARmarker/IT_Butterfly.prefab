@@ -42,8 +42,8 @@ GameObject:
   - component: {fileID: 212014897791194250}
   - component: {fileID: 65388972922436770}
   m_Layer: 0
-  m_Name: AR_CutEnd
-  m_TagString: N_CutEnd
+  m_Name: AR_CutEnd4
+  m_TagString: N_CutEnd4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
