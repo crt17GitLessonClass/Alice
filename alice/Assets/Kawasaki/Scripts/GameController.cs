@@ -62,8 +62,6 @@ public class GameController : MonoBehaviour {
         GameObject.Find("RetryButton").SetActive(true);
 
 
-
-
     }
 
     void GameOver() {
@@ -72,12 +70,5 @@ public class GameController : MonoBehaviour {
         gameover = true;
         GameObject.Find("RetryButton").SetActive(true);
 
-
-
-
     }
-
-
-
-
 }
