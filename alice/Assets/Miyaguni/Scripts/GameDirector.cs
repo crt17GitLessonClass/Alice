@@ -61,6 +61,8 @@ public class GameDirector : MonoBehaviour {
 
 	public void GetCat(){
 		catCount--;
+		AudioSource AS = GetComponent<AudioSource>();
+		AS.Play();
 	}
 
 	public void Restart(){
