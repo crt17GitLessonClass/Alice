@@ -46,24 +46,33 @@ public class GameDirector : MonoBehaviour {
 			RestartButton.SetActive(true);
 			ExitButton.SetActive(true);
 		}
-
-		if(catCount == 0){
-			cdText.color = new Color((72f / 255f) , (158f / 255f), (206f / 255f), 255f);
-			cdText.text = "ゲームクリア!";
-			Destroy(catgene);
-			Destroy(cat);
-			Destroy(SecondText);
-			time.text = "捕まえた!";
-			GameMainCtrl.ceGet += 2;
-			GameMainCtrl.f_Q6 = true;
-			Invoke("Clear", 1.0f);
-		}
 	}
 
 	public void GetCat(){
 		catCount--;
+		if(catCount==0){
+			CatClear();
+		}
 		AudioSource AS = GetComponent<AudioSource>();
 		AS.Play();
+	}
+
+	void CatClear(){
+		Text time = TimeText.GetComponent<Text>();
+		GameObject catgene = GameObject.Find("GameGenerator");
+		GameObject cat = GameObject.FindWithTag("m_cat");
+		GameObject CountDownText = GameObject.Find("CountDownText");
+		Text cdText = CountDownText.GetComponent<Text>();
+
+		cdText.color = new Color((72f / 255f) , (158f / 255f), (206f / 255f), 255f);
+		cdText.text = "ゲームクリア!";
+		Destroy(catgene);
+		Destroy(cat);
+		Destroy(SecondText);
+		time.text = "捕まえた!";
+		GameMainCtrl.ceGet += 2;
+		GameMainCtrl.f_Q6 = true;
+		Invoke("Clear", 1.0f);
 	}
 
 	public void Restart(){
