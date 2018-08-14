@@ -73,7 +73,7 @@ public class GameDirector : MonoBehaviour {
 		Destroy(catgene);
 		Destroy(SecondText);
 		GameMainCtrl.ceGet += 2;
-		GameMainCtrl.f_Q6 = true;
+		GameMainCtrl.f_Q3 = true;
 		Invoke("Clear", 1.0f);
 	}
 
