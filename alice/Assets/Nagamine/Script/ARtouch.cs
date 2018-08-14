@@ -26,9 +26,9 @@ public class ARtouch : MonoBehaviour
         {
             switch (hit.collider.tag)
             {
-                case "N_Alice":
-                    //print("rayがAliceに当たった。");
+                case "N_Alice":                       
                     Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
+                    // aliceをタッチした時の処理 
                     if (!GameMainCtrl.f_alice)
                     {
                         GameMainCtrl.f_alice = true;
@@ -41,9 +41,7 @@ public class ARtouch : MonoBehaviour
                     // 切れ端をgetした時の処理 
                     if(!GameMainCtrl.f_card1)
                     {
-                        GameMainCtrl.f_card1 = true;
-                        //print(GameMainCtrl.f_card1);
-
+                        GameMainCtrl.f_card1 = true;                          
                         ceGet_num += 1;
                         GameMainCtrl.ceGet += ceGet_num;
                         SceneManager.LoadScene("CutEnd");
@@ -88,7 +86,8 @@ public class ARtouch : MonoBehaviour
 
                 case "N_Butterfly":
                     Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
-                    if(!GameMainCtrl.f_butterfly)
+                    // 切れ端をgetした時の処理 
+                    if (!GameMainCtrl.f_butterfly)
                     {
                         GameMainCtrl.f_butterfly = true;
                         ceGet_num += 4;
@@ -100,36 +99,38 @@ public class ARtouch : MonoBehaviour
                 case "N_Twins":
                     Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
                     // twinsをタッチした時の処理 
-                    if(!GameMainCtrl.f_Q2)
+                    if (!GameMainCtrl.f_Q2)
+                    {
                         SceneManager.LoadScene("Q2");
+                    }                            
                     break;
 
                 case "N_Cat":
                     Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
                     // catをタッチした時の処理
                     if(!GameMainCtrl.f_Q3)
+                    {
                         SceneManager.LoadScene("Q3");
+                    }                           
                     break;
 
-                case "N_Alie_folf":
+                case "N_Alie_golf":
                     Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
-                    // alice_folfをタッチした時の処理
+                    // alice_golfをタッチした時の処理
                     if (!GameMainCtrl.f_Q4)
+                    {
                         SceneManager.LoadScene("Q4");
+                    }                            
                     break;
 
                 case "N_WhiteRabbit":
                     Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
                     // whiterabbitをタッチした時の処理
                     if (!GameMainCtrl.f_Q5)
+                    {
                         SceneManager.LoadScene("Q5");
+                    }                             
                     break;
-
-                //case "N_Caterpillar":
-                //    Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
-                //    // caterrpillarをタッチした時の処理
-                //    //SceneManager.LoadScene("Q6");
-                //    break;
 
                 default:
                     break;
