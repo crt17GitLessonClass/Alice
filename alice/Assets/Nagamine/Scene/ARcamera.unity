@@ -276,29 +276,34 @@ Prefab:
     - target: {fileID: 114366967939408398, guid: 331fab22d70ea674a8ed6265f86c2960,
         type: 2}
       propertyPath: mTrackableName
-      value: Card_1
+      value: Card01_ver2
       objectReference: {fileID: 0}
     - target: {fileID: 114366967939408398, guid: 331fab22d70ea674a8ed6265f86c2960,
         type: 2}
       propertyPath: mAspectRatio
-      value: 1.5945679
+      value: 1.4029363
       objectReference: {fileID: 0}
     - target: {fileID: 114366967939408398, guid: 331fab22d70ea674a8ed6265f86c2960,
         type: 2}
       propertyPath: mHeight
-      value: 15.945679
+      value: 14.029364
       objectReference: {fileID: 0}
     - target: {fileID: 4499907205005438, guid: 331fab22d70ea674a8ed6265f86c2960, type: 2}
       propertyPath: m_LocalScale.x
-      value: 15.945679
+      value: 14.029364
       objectReference: {fileID: 0}
     - target: {fileID: 4499907205005438, guid: 331fab22d70ea674a8ed6265f86c2960, type: 2}
       propertyPath: m_LocalScale.y
-      value: 15.945679
+      value: 14.029364
       objectReference: {fileID: 0}
     - target: {fileID: 4499907205005438, guid: 331fab22d70ea674a8ed6265f86c2960, type: 2}
       propertyPath: m_LocalScale.z
-      value: 15.945679
+      value: 14.029364
+      objectReference: {fileID: 0}
+    - target: {fileID: 114366967939408398, guid: 331fab22d70ea674a8ed6265f86c2960,
+        type: 2}
+      propertyPath: mDataSetPath
+      value: Vuforia/AliceMarker.xml
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 331fab22d70ea674a8ed6265f86c2960, type: 2}
@@ -324,7 +329,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: f893715b3498417d8b285af793644ab5, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1050bb1cd93346ee8b376483f8d4acc6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -347,7 +352,7 @@ Mesh:
     vertexCount: 4
     localAABB:
       m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.31356457, y: 0, z: 0.5}
+      m_Extent: {x: 0.35639536, y: 0, z: 0.5}
   m_Shapes:
     vertices: []
     shapes: []
@@ -416,7 +421,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 128
-    _typelessdata: 898ba0be00000000000000bf000000000000803f000000000000000000000000898ba0be000000000000003f000000000000803f00000000000000000000803f898ba03e00000000000000bf000000000000803f000000000000803f00000000898ba03e000000000000003f000000000000803f000000000000803f0000803f
+    _typelessdata: 7479b6be00000000000000bf000000000000803f0000000000000000000000007479b6be000000000000003f000000000000803f00000000000000000000803f7479b63e00000000000000bf000000000000803f000000000000803f000000007479b63e000000000000003f000000000000803f000000000000803f0000803f
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -567,7 +572,7 @@ Mesh:
     vertexCount: 4
     localAABB:
       m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.31356457, y: 0, z: 0.5}
+      m_Extent: {x: 0.35639536, y: 0, z: 0.5}
   m_Shapes:
     vertices: []
     shapes: []
@@ -636,7 +641,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 128
-    _typelessdata: 898ba0be00000000000000bf000000000000803f000000000000000000000000898ba0be000000000000003f000000000000803f00000000000000000000803f898ba03e00000000000000bf000000000000803f000000000000803f00000000898ba03e000000000000003f000000000000803f000000000000803f0000803f
+    _typelessdata: 7479b6be00000000000000bf000000000000803f0000000000000000000000007479b6be000000000000003f000000000000803f00000000000000000000803f7479b63e00000000000000bf000000000000803f000000000000803f000000007479b63e000000000000003f000000000000803f000000000000803f0000803f
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -761,80 +766,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &372727712
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 372727713}
-  - component: {fileID: 372727715}
-  - component: {fileID: 372727714}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &372727713
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 372727712}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1959550453}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &372727714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 372727712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: e32b8f363d0650044b4ea385210cc180, type: 3}
-    m_FontSize: 200
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 300
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: ARcameraScene
---- !u!222 &372727715
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 372727712}
 --- !u!43 &429298320
 Mesh:
   m_ObjectHideFlags: 0
@@ -852,7 +783,7 @@ Mesh:
     vertexCount: 4
     localAABB:
       m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.31356457, y: 0, z: 0.5}
+      m_Extent: {x: 0.35639536, y: 0, z: 0.5}
   m_Shapes:
     vertices: []
     shapes: []
@@ -921,7 +852,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 128
-    _typelessdata: 898ba0be00000000000000bf000000000000803f000000000000000000000000898ba0be000000000000003f000000000000803f00000000000000000000803f898ba03e00000000000000bf000000000000803f000000000000803f00000000898ba03e000000000000003f000000000000803f000000000000803f0000803f
+    _typelessdata: 7479b6be00000000000000bf000000000000803f0000000000000000000000007479b6be000000000000003f000000000000803f00000000000000000000803f7479b63e00000000000000bf000000000000803f000000000000803f000000007479b63e000000000000003f000000000000803f000000000000803f0000803f
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -1041,29 +972,34 @@ Prefab:
     - target: {fileID: 114132401350952922, guid: 93e34c3c350295341a806f95b0776b31,
         type: 2}
       propertyPath: mTrackableName
-      value: Card_4
+      value: Card04_ver2
       objectReference: {fileID: 0}
     - target: {fileID: 114132401350952922, guid: 93e34c3c350295341a806f95b0776b31,
         type: 2}
       propertyPath: mAspectRatio
-      value: 1.5945679
+      value: 1.4029363
       objectReference: {fileID: 0}
     - target: {fileID: 114132401350952922, guid: 93e34c3c350295341a806f95b0776b31,
         type: 2}
       propertyPath: mHeight
-      value: 15.945679
+      value: 14.029364
       objectReference: {fileID: 0}
     - target: {fileID: 4023833973992080, guid: 93e34c3c350295341a806f95b0776b31, type: 2}
       propertyPath: m_LocalScale.x
-      value: 15.945679
+      value: 14.029364
       objectReference: {fileID: 0}
     - target: {fileID: 4023833973992080, guid: 93e34c3c350295341a806f95b0776b31, type: 2}
       propertyPath: m_LocalScale.y
-      value: 15.945679
+      value: 14.029364
       objectReference: {fileID: 0}
     - target: {fileID: 4023833973992080, guid: 93e34c3c350295341a806f95b0776b31, type: 2}
       propertyPath: m_LocalScale.z
-      value: 15.945679
+      value: 14.029364
+      objectReference: {fileID: 0}
+    - target: {fileID: 114132401350952922, guid: 93e34c3c350295341a806f95b0776b31,
+        type: 2}
+      propertyPath: mDataSetPath
+      value: Vuforia/AliceMarker.xml
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 93e34c3c350295341a806f95b0776b31, type: 2}
@@ -1098,7 +1034,7 @@ RectTransform:
   m_Children:
   - {fileID: 246584625}
   m_Father: {fileID: 1959550453}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -1290,7 +1226,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: cbbf685cf3ec43c697065923ef27d749, type: 3}
+        m_Texture: {fileID: 2800000, guid: f1fe43ad55f9454c90f01f735d1cec39, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -1302,7 +1238,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 'Card_5Material
+  m_Name: 'Card05_ver2Material
 
     -1336'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
@@ -1317,7 +1253,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: e464a11058f1499aa291a32472913a66, type: 3}
+        m_Texture: {fileID: 2800000, guid: f9cd88e05de943e2ac4df26f87a96f12, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -1674,30 +1610,35 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4901550482063370, guid: 3a9ef55c619340147b8ac7b4fbc4f3ac, type: 2}
       propertyPath: m_LocalScale.x
-      value: 15.945679
+      value: 14.029364
       objectReference: {fileID: 0}
     - target: {fileID: 4901550482063370, guid: 3a9ef55c619340147b8ac7b4fbc4f3ac, type: 2}
       propertyPath: m_LocalScale.y
-      value: 15.945679
+      value: 14.029364
       objectReference: {fileID: 0}
     - target: {fileID: 4901550482063370, guid: 3a9ef55c619340147b8ac7b4fbc4f3ac, type: 2}
       propertyPath: m_LocalScale.z
-      value: 15.945679
+      value: 14.029364
       objectReference: {fileID: 0}
     - target: {fileID: 114282124662155840, guid: 3a9ef55c619340147b8ac7b4fbc4f3ac,
         type: 2}
       propertyPath: mTrackableName
-      value: Card_10
+      value: Card10_ver2
       objectReference: {fileID: 0}
     - target: {fileID: 114282124662155840, guid: 3a9ef55c619340147b8ac7b4fbc4f3ac,
         type: 2}
       propertyPath: mAspectRatio
-      value: 1.5945679
+      value: 1.4029363
       objectReference: {fileID: 0}
     - target: {fileID: 114282124662155840, guid: 3a9ef55c619340147b8ac7b4fbc4f3ac,
         type: 2}
       propertyPath: mHeight
-      value: 15.945679
+      value: 14.029364
+      objectReference: {fileID: 0}
+    - target: {fileID: 114282124662155840, guid: 3a9ef55c619340147b8ac7b4fbc4f3ac,
+        type: 2}
+      propertyPath: mDataSetPath
+      value: Vuforia/AliceMarker.xml
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3a9ef55c619340147b8ac7b4fbc4f3ac, type: 2}
@@ -1895,7 +1836,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 'Card_4Material
+  m_Name: 'Card04_ver2Material
 
     -1074'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
@@ -1910,7 +1851,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4e81fabea2804c05968510efba5b8259, type: 3}
+        m_Texture: {fileID: 2800000, guid: a7ff4db49f23483f8232e4e99ce9c7c2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -1922,7 +1863,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 'Card_10Material
+  m_Name: 'Card10_ver2Material
 
     -1140'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
@@ -1937,7 +1878,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 3f594c79eed24742b7ea570e547a8705, type: 3}
+        m_Texture: {fileID: 2800000, guid: 95ba0b5d74174020ae25d8e7373e5fc8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -2476,7 +2417,7 @@ Mesh:
     vertexCount: 4
     localAABB:
       m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.31356457, y: 0, z: 0.5}
+      m_Extent: {x: 0.35639536, y: 0, z: 0.5}
   m_Shapes:
     vertices: []
     shapes: []
@@ -2545,7 +2486,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 128
-    _typelessdata: 898ba0be00000000000000bf000000000000803f000000000000000000000000898ba0be000000000000003f000000000000803f00000000000000000000803f898ba03e00000000000000bf000000000000803f000000000000803f00000000898ba03e000000000000003f000000000000803f000000000000803f0000803f
+    _typelessdata: 7479b6be00000000000000bf000000000000803f0000000000000000000000007479b6be000000000000003f000000000000803f00000000000000000000803f7479b63e00000000000000bf000000000000803f000000000000803f000000007479b63e000000000000003f000000000000803f000000000000803f0000803f
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -2626,7 +2567,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: f19a10703d074db096911916ba517911, type: 3}
+        m_Texture: {fileID: 2800000, guid: 975334739ce140f9a94b3d4d4124e4ab, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -3059,29 +3000,34 @@ Prefab:
     - target: {fileID: 114456321499396978, guid: 4f2be254692d7214faa994421263a7e4,
         type: 2}
       propertyPath: mTrackableName
-      value: Card_5
+      value: Card05_ver2
       objectReference: {fileID: 0}
     - target: {fileID: 114456321499396978, guid: 4f2be254692d7214faa994421263a7e4,
         type: 2}
       propertyPath: mAspectRatio
-      value: 1.5945679
+      value: 1.4029363
       objectReference: {fileID: 0}
     - target: {fileID: 114456321499396978, guid: 4f2be254692d7214faa994421263a7e4,
         type: 2}
       propertyPath: mHeight
-      value: 15.945679
+      value: 14.029364
       objectReference: {fileID: 0}
     - target: {fileID: 4212141864166686, guid: 4f2be254692d7214faa994421263a7e4, type: 2}
       propertyPath: m_LocalScale.x
-      value: 15.945679
+      value: 14.029364
       objectReference: {fileID: 0}
     - target: {fileID: 4212141864166686, guid: 4f2be254692d7214faa994421263a7e4, type: 2}
       propertyPath: m_LocalScale.y
-      value: 15.945679
+      value: 14.029364
       objectReference: {fileID: 0}
     - target: {fileID: 4212141864166686, guid: 4f2be254692d7214faa994421263a7e4, type: 2}
       propertyPath: m_LocalScale.z
-      value: 15.945679
+      value: 14.029364
+      objectReference: {fileID: 0}
+    - target: {fileID: 114456321499396978, guid: 4f2be254692d7214faa994421263a7e4,
+        type: 2}
+      propertyPath: mDataSetPath
+      value: Vuforia/AliceMarker.xml
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f2be254692d7214faa994421263a7e4, type: 2}
@@ -3092,7 +3038,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 'Card_1Material
+  m_Name: 'Card01_ver2Material
 
     -1052'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
@@ -3107,7 +3053,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: cd71c19ae3bc4fcca690025df7376cf1, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8aac688ea6374c8da93ca96134e90f30, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -3134,7 +3080,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 32fd6ef96a4f4bb2b72a320e4af4ecb1, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3cddf755edfc4905ba50f7a7a1c5fb2a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -3161,7 +3107,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: f439d5aec038487aae2ad910a82b6ae2, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9c4010173c694e4a9799b16770d3338e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -3314,7 +3260,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 372727713}
   - {fileID: 650993153}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -3397,7 +3342,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: fafe35fcabea41fe986b2665cbc206e7, type: 3}
+        m_Texture: {fileID: 2800000, guid: a26f9b4cfa344890bb0f6811f340b398, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -3424,7 +3369,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1fa1abfbc35c4b218e78671bdfcf8094, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7dbe707dfedd49e9aeeced8b7d6bf8c6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
