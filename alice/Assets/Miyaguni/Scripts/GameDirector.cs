@@ -55,6 +55,7 @@ public class GameDirector : MonoBehaviour {
 			Destroy(SecondText);
 			time.text = "捕まえた!";
 			GameMainCtrl.ceGet += 2;
+			GameMainCtrl.f_Q6 = true;
 			Invoke("Clear", 1.0f);
 		}
 	}
