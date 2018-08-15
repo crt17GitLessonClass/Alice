@@ -104,6 +104,10 @@ public class Controller : MonoBehaviour {
 		maruFalseSprite[i].enabled = true;
 		mistakeCount--;
 		mistakeCountText.text = "あと" + mistakeCount + "こ";
+		if(mistakeCount == 0){
+			GameMainCtrl.ceNum += 2;
+			GameMainCtrl.f_Q2 = true;
+		}
 	}
 
 	IEnumerator CountDown(){

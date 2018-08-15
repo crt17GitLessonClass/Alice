@@ -6,15 +6,28 @@ using UnityEngine.UI;
 public class Puzzle0 : MonoBehaviour {
 
 	public GameObject Camera;
+	public GameObject Piece_easy;
+	public GameObject Piece_nomal;
+	public GameObject Piece_hard;
+	public GameObject PutPos_easy;
+	public GameObject PutPos_nomal;
+	public GameObject PutPos_hard;
+	public GameObject Panel_easy;
+	public GameObject Panel_nomal;
+	public GameObject Panel_hard;
+
 	public Text timeLimitText;
+
 	public int timeLimit = 300;
 
-	GameObject PutPos;
-	Vector3 startPos;
-	int count = 20;
+	int count;
 	bool touching = false;
+	bool puzzleActive = true;
+
+	Vector3 startPos;
 
 	Camera cam;
+	GameObject PutPos;
 	GameObject MovingPiece;
 	BoxCollider MovingPieceCol;
 	Renderer MovingPieceRen;
@@ -22,31 +35,53 @@ public class Puzzle0 : MonoBehaviour {
 	void Start () {
 		StartCoroutine(countDown());
 		cam = Camera.GetComponent<Camera>();
+		switch(Mathf.FloorToInt(GameMainCtrl.ceNum / 7)){
+			case 0:
+				Piece_easy.SetActive(true);
+				PutPos_easy.SetActive(true);
+				Panel_easy.SetActive(true);
+				count = 20;
+				break;
+			case 1:
+				Piece_nomal.SetActive(true);
+				PutPos_nomal.SetActive(true);
+				Panel_nomal.SetActive(true);
+				count = 35;
+				break;
+			default:
+				Piece_hard.SetActive(true);
+				PutPos_hard.SetActive(true);
+				Panel_hard.SetActive(true);
+				count = 56;
+				break;
+		}
 	}
 	
 	void FixedUpdate () {
-		if(Input.touchCount == 1){
-			Touch t = Input.GetTouch(0);
-			transform.position = cam.ScreenToWorldPoint(new Vector3(t.position.x, t.position.y, -Camera.transform.position.z));
-			if(t.phase == TouchPhase.Began){
-				touching = true;
-			}
-			if(MovingPiece != null){
-				MovingPiece.transform.position = cam.ScreenToWorldPoint(new Vector3(t.position.x, t.position.y, -Camera.transform.position.z));
-				if(t.phase == TouchPhase.Ended){
-					if(PutPos != null && PutPos.name.Substring(0) == MovingPiece.name.Substring(9)){
-						MovingPiece.transform.position = PutPos.transform.position;
-						count--;
-					}else{
-						MovingPiece.transform.position = startPos;
-						MovingPieceCol.enabled = true;
-					}
-					MovingPieceRen.sortingOrder--;
-					MovingPiece = null;
-					PutPos = null;
-					touching = false;
+		if(puzzleActive){return;}
+		if(Input.touchCount != 1){return;}
+		Touch t = Input.GetTouch(0);
+		transform.position = cam.ScreenToWorldPoint(new Vector3(t.position.x, t.position.y, -Camera.transform.position.z));
+		if(t.phase == TouchPhase.Began){
+			touching = true;
+		}
+		if(MovingPiece != null){
+			MovingPiece.transform.position = cam.ScreenToWorldPoint(new Vector3(t.position.x, t.position.y, -Camera.transform.position.z));
+			if(t.phase != TouchPhase.Ended){return;}
+			if(PutPos != null && PutPos.name.Substring(0) == MovingPiece.name.Substring(9)){
+				MovingPiece.transform.position = PutPos.transform.position;
+				count--;
+				if(count == 0){
+					//clear
 				}
+			}else{
+				MovingPiece.transform.position = startPos;
+				MovingPieceCol.enabled = true;
 			}
+			MovingPieceRen.sortingOrder--;
+			MovingPiece = null;
+			PutPos = null;
+			touching = false;
 		}
 	}
 
@@ -70,5 +105,6 @@ public class Puzzle0 : MonoBehaviour {
 			timeLimit--;
 			timeLimitText.text = timeLimit.ToString();
 		}
+		puzzleActive = false;
 	}
 }
