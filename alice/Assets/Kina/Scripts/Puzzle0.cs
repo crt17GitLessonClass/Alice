@@ -58,7 +58,7 @@ public class Puzzle0 : MonoBehaviour {
 	}
 	
 	void FixedUpdate () {
-		if(puzzleActive){return;}
+		if(!puzzleActive){return;}
 		if(Input.touchCount != 1){return;}
 		Touch t = Input.GetTouch(0);
 		transform.position = cam.ScreenToWorldPoint(new Vector3(t.position.x, t.position.y, -Camera.transform.position.z));
