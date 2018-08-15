@@ -87,9 +87,9 @@ public class ARtouch : MonoBehaviour
                 case "N_Butterfly":
                     Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
                     // 切れ端をgetした時の処理 
-                    if (!GameMainCtrl.f_butterfly)
+                    if (!GameMainCtrl.f_Q6)
                     {
-                        GameMainCtrl.f_butterfly = true;
+                        GameMainCtrl.f_Q6 = true;
                         ceGet_num += 4;
                         GameMainCtrl.ceGet += ceGet_num;
                         SceneManager.LoadScene("CutEnd");

@@ -35,34 +35,45 @@ public class GameMainCtrl : MonoBehaviour
     public static bool f_card4 = false;
     public static bool f_card5 = false;
     public static bool f_card10 = false;
-    public static bool f_butterfly = false;
+    //public static bool f_butterfly = false;
     public static bool f_Q2 = false;
     public static bool f_Q3 = false;
     public static bool f_Q4 = false;
     public static bool f_Q5 = false;
     public static bool f_Q6 = false;
+    //タイムアップcanvas
+    public GameObject timeupCanvas;
 
     void Start ()
     {                       
         timertext = timer.GetComponent<Text>();
         hintclose.SetActive(false);
-        for(int i = 0; i < hinttext.Length; i++)              
-            hinttext[i].SetActive(false);           
+        for(int i = 0; i < hinttext.Length; i++)
+        {
+            hinttext[i].SetActive(false);
+        }                       
         if(f_gamestart)
+        {
             gameStartSet.SetActive(false);
+        }               
         CutEndDisplay();
         MSreset();
-        ms.SetActive(false);
-        //if (!f_msButton)
-        //    msButton.SetActive(false);
-        //else
-        //    msButton.SetActive(true);
+        ms.SetActive(false);          
         if (!f_msButton)
+        {
             msButton.SetActive(false);
+        }  
 
-        //print(f_card1);
+        if(f_alice && f_card1 && f_card4 && f_card5 && f_card10 && f_Q2 && f_Q3 && f_Q4 && f_Q5 && f_Q6)
+        {
+            timeupCanvas.SetActive(true);
+        }
+        else
+        {
+            timeupCanvas.SetActive(false);
+        }
     }
-
+    
     void Update ()
     {
         TimeDisplay();                 
