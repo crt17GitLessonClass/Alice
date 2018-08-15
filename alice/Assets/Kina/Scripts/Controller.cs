@@ -7,7 +7,6 @@ public class Controller : MonoBehaviour {
 
 	public GameObject cameraObject;
 	public GameObject retryButton;
-	public GameObject retireButton;
 	public GameObject coment;
 
 	public BoxCollider[] maruTrueCol;
@@ -113,7 +112,7 @@ public class Controller : MonoBehaviour {
 		if(mistakeCount == 0){
 			GameMainCtrl.ceNum += 2;
 			GameMainCtrl.f_Q2 = true;
-			SceneManager.LoadScene("GameMain");
+			SceneManager.LoadScene("CutEnd");
 		}
 	}
 
@@ -133,7 +132,6 @@ public class Controller : MonoBehaviour {
 		}
 		gameActive = false;
 		retryButton.SetActive(true);
-		retireButton.SetActive(true);
 		coment.SetActive(true);
 	}
 
