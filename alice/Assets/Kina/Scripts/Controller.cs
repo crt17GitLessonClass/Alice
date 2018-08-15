@@ -7,6 +7,7 @@ public class Controller : MonoBehaviour {
 
 	public GameObject cameraObject;
 	public GameObject retryButton;
+	public GameObject retireButton;
 	public GameObject coment;
 
 	public BoxCollider[] maruTrueCol;
@@ -132,6 +133,7 @@ public class Controller : MonoBehaviour {
 		}
 		gameActive = false;
 		retryButton.SetActive(true);
+		retireButton.SetActive(true);
 		coment.SetActive(true);
 	}
 
