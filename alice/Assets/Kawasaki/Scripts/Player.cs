@@ -17,6 +17,12 @@ public class Player : MonoBehaviour {
     }
 
     void FixedUpdate() {
+        if (!GC.movestart) { return; }
+        if (GC.clear || GC.gameover) {
+            rb.velocity = Vector3.zero;
+            return;
+        }
+
         Move();
 
     }
@@ -27,10 +33,6 @@ public class Player : MonoBehaviour {
     }
 
     void Move() {
-        if (GC.clear || GC.gameover) {
-            rb.velocity = Vector3.zero;
-            return;
-        }
 
         Vector3 dir = Vector3.zero;
 
@@ -46,18 +48,24 @@ public class Player : MonoBehaviour {
     void OnTriggerEnter(Collider other) {
 
         if (other.gameObject.tag == "D_card1" && GC.flag1) {
+            GC.CurrectSE();
             GC.flag1 = false;
             GC.flag4 = true;
         } else if (other.gameObject.tag == "D_card4" && GC.flag4) {
+            GC.CurrectSE();
             GC.flag4 = false;
             GC.flag5 = true;
         } else if (other.gameObject.tag == "D_card5" && GC.flag5) {
+            GC.CurrectSE();
+
             GC.flag5 = false;
             GC.flag10 = true;
         } else if (other.gameObject.tag == "D_card10" && GC.flag10) {
+            GC.CurrectSE();
             GC.flag10 = false;
             GC.Clear();
         } else {
+            GC.inCurrectSE();
             GC.Reset(this.gameObject);
 
         }
