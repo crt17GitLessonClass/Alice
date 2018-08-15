@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class Controller : MonoBehaviour {
 
 	public GameObject cameraObject;
+	public GameObject retryButton;
+	public GameObject retireButton;
+	public GameObject coment;
+
 	public BoxCollider[] maruTrueCol;
 	public BoxCollider[] maruFalseCol;
 	public SpriteRenderer[] maruTrueSprite;
@@ -27,6 +31,7 @@ public class Controller : MonoBehaviour {
 	float changingDist;
 
 	bool cameraMoving = false;
+	bool gameActive = true;
 
 	Camera Camera;
 	BoxCollider touchCol;
@@ -41,6 +46,7 @@ public class Controller : MonoBehaviour {
 	}
 
 	void FixedUpdate(){
+		if(!gameActive){return;}
 		//タッチ・スワイプ
 		if(Input.touchCount == 1){
 			Touch t = Input.GetTouch(0);
@@ -104,6 +110,19 @@ public class Controller : MonoBehaviour {
 		maruFalseSprite[i].enabled = true;
 		mistakeCount--;
 		mistakeCountText.text = "あと" + mistakeCount + "こ";
+		if(mistakeCount == 0){
+			GameMainCtrl.ceNum += 2;
+			GameMainCtrl.f_Q2 = true;
+			SceneManager.LoadScene("CutEnd");
+		}
+	}
+
+	public void OnRetryButton(){
+		SceneManager.LoadScene("Q2");
+	}
+
+	public void OnRetireButton(){
+		SceneManager.LoadScene("GameMain");
 	}
 
 	IEnumerator CountDown(){
@@ -112,6 +131,10 @@ public class Controller : MonoBehaviour {
 			timeLimit--;
 			timeText.text = "" + i;
 		}
+		gameActive = false;
+		retryButton.SetActive(true);
+		retireButton.SetActive(true);
+		coment.SetActive(true);
 	}
 
 	Vector3 LimitingPos(Vector3 pos){

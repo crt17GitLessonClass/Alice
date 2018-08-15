@@ -23,6 +23,8 @@ TagManager:
   - N_Card5
   - N_Card10
   - N_Butterfly
+  - K_Piece
+  - K_PutPos
   layers:
   - Default
   - TransparentFX
