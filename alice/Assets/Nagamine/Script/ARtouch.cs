@@ -114,7 +114,7 @@ public class ARtouch : MonoBehaviour
                     }                           
                     break;
 
-                case "N_Alie_golf":
+                case "N_Alice_golf":
                     Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
                     // alice_golfをタッチした時の処理
                     if (!GameMainCtrl.f_Q4)

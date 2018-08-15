@@ -8,36 +8,45 @@ public class TimeCtrl : MonoBehaviour
 {             
     public static float countTime = 1200;     
     public static bool f_count = false;
+    public static bool f_timeup = false;
     public GameObject timeupCanvas;
 
     void Start ()
     {             
-        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(this.gameObject);         
         timeupCanvas.SetActive(false);
     }   
 	
 	void Update ()
     {
-        if(f_count && countTime > 0)
+        if (!f_timeup)
+        {
+            CountTime();  
+        }              
+    }
+
+    void CountTime()
+    {
+        if (f_count && countTime > 0)
         {
             Timer();
-        }             
+        }
 
-        if(f_count && countTime <= 0)
+        if (f_count && countTime <= 0)
         {
             timeupCanvas.SetActive(true);
-            //PuzzleButton();
-            //SceneManager.LoadScene("Q8");
-        }  
+        }
     }
 
     void Timer()
     {
         countTime -= Time.deltaTime;        
-    } 
+    }     
     
     public void PuzzleButton()
-    {
+    {               
+        f_timeup = true;
+        timeupCanvas.SetActive(false);
         SceneManager.LoadScene("Q8");
     }
 }
