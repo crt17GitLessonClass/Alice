@@ -35,7 +35,7 @@ public class Puzzle0 : MonoBehaviour {
 	void Start () {
 		StartCoroutine(countDown());
 		cam = Camera.GetComponent<Camera>();
-		switch(Mathf.FloorToInt(GameMainCtrl.ceNum / 7)){
+		switch(Mathf.FloorToInt(GameMainCtrl.ceNum / 8)){
 			case 0:
 				Piece_easy.SetActive(true);
 				PutPos_easy.SetActive(true);
