@@ -27,7 +27,7 @@ public class ARtouch : MonoBehaviour
             switch (hit.collider.tag)
             {
                 case "N_Alice":                       
-                    Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
+                    //Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
                     // aliceをタッチした時の処理 
                     if (!GameMainCtrl.f_alice)
                     {
@@ -40,7 +40,7 @@ public class ARtouch : MonoBehaviour
                     break;
 
                 case "N_Card1":
-                    Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
+                    //Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
                     // 切れ端をgetした時の処理 
                     if(!GameMainCtrl.f_card1)
                     {
@@ -52,7 +52,7 @@ public class ARtouch : MonoBehaviour
                     break;
 
                 case "N_Card4":
-                    Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
+                    //Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
                     // 切れ端をgetした時の処理 
                     if (!GameMainCtrl.f_card4)
                     {
@@ -64,7 +64,7 @@ public class ARtouch : MonoBehaviour
                     break;
 
                 case "N_Card5":
-                    Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
+                    //Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
                     // 切れ端をgetした時の処理 
                     if (!GameMainCtrl.f_card5)
                     {
@@ -76,7 +76,7 @@ public class ARtouch : MonoBehaviour
                     break;
 
                 case "N_Card10":
-                    Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
+                    //Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
                     // 切れ端をgetした時の処理 
                     if (!GameMainCtrl.f_card10)
                     {
@@ -88,7 +88,7 @@ public class ARtouch : MonoBehaviour
                     break;
 
                 case "N_Butterfly":
-                    Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
+                    //Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
                     // 切れ端をgetした時の処理 
                     if (!GameMainCtrl.f_Q6)
                     {
@@ -100,7 +100,7 @@ public class ARtouch : MonoBehaviour
                     break;
 
                 case "N_Twins":
-                    Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
+                    //Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
                     // twinsをタッチした時の処理 
                     if (!GameMainCtrl.f_Q2)
                     {
@@ -109,7 +109,7 @@ public class ARtouch : MonoBehaviour
                     break;
 
                 case "N_Cat":
-                    Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
+                    //Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
                     // catをタッチした時の処理
                     if(!GameMainCtrl.f_Q3)
                     {
@@ -118,7 +118,7 @@ public class ARtouch : MonoBehaviour
                     break;
 
                 case "N_Alice_golf":
-                    Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
+                    //Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
                     // alice_golfをタッチした時の処理
                     if (!GameMainCtrl.f_Q4)
                     {
@@ -127,7 +127,7 @@ public class ARtouch : MonoBehaviour
                     break;
 
                 case "N_WhiteRabbit":
-                    Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
+                    //Debug.LogFormat("rayが {0} に当たった。", hit.collider.tag);
                     // whiterabbitをタッチした時の処理
                     if (!GameMainCtrl.f_Q5)
                     {

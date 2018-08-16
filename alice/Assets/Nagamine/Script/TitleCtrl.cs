@@ -17,7 +17,7 @@ public class TitleCtrl : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             SE.PlayOneShot(SE.clip);
-            Invoke("MainSceneLoad", 1.0f);            
+            Invoke("MainSceneLoad", 1.5f);            
         } 		
 	}
 
