@@ -20,7 +20,7 @@ public class TutorialCtrl : MonoBehaviour
     public void ARcamera()
     {
         SE.PlayOneShot(SE.clip);
-        Invoke("ARcameraSceneLoad", 1.0f);        
+        Invoke("ARcameraSceneLoad", 0.5f);        
     }
 
     void ARcameraSceneLoad()

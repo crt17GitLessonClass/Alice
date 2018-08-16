@@ -44,8 +44,15 @@ public class GameMainCtrl : MonoBehaviour
     //タイムアップcanvas
     public GameObject timeupCanvas;
 
+    AudioSource SE1;
+    AudioSource SE2;
+
     void Start ()
-    {                       
+    {
+        AudioSource[] audiosources = GetComponents<AudioSource>();
+        SE1 = audiosources[0];
+        SE2 = audiosources[1];
+
         timertext = timer.GetComponent<Text>();
         hintclose.SetActive(false);
         for(int i = 0; i < hinttext.Length; i++)
@@ -81,6 +88,8 @@ public class GameMainCtrl : MonoBehaviour
 
     public void GameStart()
     {
+        SE1.PlayOneShot(SE1.clip);
+
         // ゲームをスタートし、タイマーのカウントを開始。
         gameStartSet.SetActive(false);
         f_gamestart = true;
@@ -113,12 +122,20 @@ public class GameMainCtrl : MonoBehaviour
     // ARカメラ
     public void ARcamera()
     {
+        SE1.PlayOneShot(SE1.clip);
+        Invoke("ARcameraSceneLoad", 0.5f);         
+    }
+
+    void ARcameraSceneLoad()
+    {
         SceneManager.LoadScene("ARcamera");
     }
 
     // ヒントウィンドウの表示
     public void HintWindow(int num)
     {
+        SE1.PlayOneShot(SE1.clip);
+
         // for文 findでいい気がする
         hintclose.SetActive(false);
         for (int i = 0; i < hinttext.Length; i++)
@@ -161,6 +178,8 @@ public class GameMainCtrl : MonoBehaviour
     // ヒントウィンドウの非表示
     public void HintCloseButton()
     {
+        SE1.PlayOneShot(SE1.clip);
+
         GameObject hintObj = GameObject.FindGameObjectWithTag("N_HintWindow");
         hintObj.SetActive(false);
         hintclose.SetActive(false);
@@ -198,7 +217,7 @@ public class GameMainCtrl : MonoBehaviour
             f_ms5 = false;
             f_msButton = true;
             msButton.SetActive(true);
-            MSon();
+            MSget();
         }
         else
         {
@@ -215,19 +234,32 @@ public class GameMainCtrl : MonoBehaviour
         f_ms4 = false;
         f_ms5 = false;
     } 
+
+    void MSget()
+    {
+        SE2.PlayOneShot(SE2.clip);
+
+        ms.SetActive(true);
+    }
     
     public void MSon()
     {
+        SE1.PlayOneShot(SE1.clip);
+
         ms.SetActive(true);
     }
 
     public void MScloseButton()
     {
+        SE1.PlayOneShot(SE1.clip);
+
         ms.SetActive(false);
     }
 
     public void PuzzleButton()
     {
+        SE1.PlayOneShot(SE1.clip);
+
         TimeCtrl.f_timeup = true;
         timeupCanvas.SetActive(false);
         SceneManager.LoadScene("Q8");
