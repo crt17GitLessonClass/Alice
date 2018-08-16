@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Puzzle0 : MonoBehaviour {
 
@@ -72,7 +73,7 @@ public class Puzzle0 : MonoBehaviour {
 				MovingPiece.transform.position = PutPos.transform.position;
 				count--;
 				if(count == 0){
-					//clear
+					SceneManager.LoadScene("GameClear");
 				}
 			}else{
 				MovingPiece.transform.position = startPos;
@@ -105,5 +106,6 @@ public class Puzzle0 : MonoBehaviour {
 			timeLimit--;
 			timeLimitText.text = timeLimit.ToString();
 		}
+		SceneManager.LoadScene("GameOver");
 	}
 }
