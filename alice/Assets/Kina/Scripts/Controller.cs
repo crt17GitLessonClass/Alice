@@ -111,14 +111,25 @@ public class Controller : MonoBehaviour {
 		mistakeCount--;
 		mistakeCountText.text = "あと" + mistakeCount + "こ";
 		if(mistakeCount == 0){
-			GameMainCtrl.ceNum += 2;
+			GameMainCtrl.ceGet = 2;
 			GameMainCtrl.f_Q2 = true;
 			SceneManager.LoadScene("CutEnd");
 		}
 	}
 
 	public void OnRetryButton(){
-		SceneManager.LoadScene("Q2");
+		mistakeCount = 5;
+		timeLimit = 60;
+		StartCoroutine(CountDown());
+		retryButton.SetActive(false);
+		retireButton.SetActive(false);
+		coment.SetActive(false);
+		for(int i = 0; i < maruTrueCol.Length; i++){
+			maruFalseCol[i].enabled = true;
+			maruTrueCol[i].enabled = true;
+			maruFalseSprite[i].enabled = false;
+			maruTrueSprite[i].enabled = false;
+		}
 	}
 
 	public void OnRetireButton(){
