@@ -38,4 +38,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Nagamine/Scene/CutEnd.unity
     guid: 2c86614480ac4f344869be9a8320b002
+  - enabled: 1
+    path: Assets/Miyaguni/Scenes/GameClear.unity
+    guid: 468e63cc9653e5f4eaff285ea9b41fb8
+  - enabled: 1
+    path: Assets/Miyaguni/Scenes/GameOver.unity
+    guid: 411bc273910ea7440a4d0cc5030d2672
+  - enabled: 1
+    path: Assets/Miyaguni/Scenes/Ending.unity
+    guid: 7e4cb5f321695c64da5eb42182244fc3
   m_configObjects: {}

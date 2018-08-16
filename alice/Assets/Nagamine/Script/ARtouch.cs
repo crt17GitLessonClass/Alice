@@ -32,7 +32,10 @@ public class ARtouch : MonoBehaviour
                     if (!GameMainCtrl.f_alice)
                     {
                         GameMainCtrl.f_alice = true;
-                        SceneManager.LoadScene("GameMain");
+                        ceGet_num += 1;
+                        GameMainCtrl.ceGet += ceGet_num;
+                        SceneManager.LoadScene("CutEnd");
+                        //SceneManager.LoadScene("GameMain");
                     }                                
                     break;
 
