@@ -105,6 +105,5 @@ public class Puzzle0 : MonoBehaviour {
 			timeLimit--;
 			timeLimitText.text = timeLimit.ToString();
 		}
-		puzzleActive = false;
 	}
 }

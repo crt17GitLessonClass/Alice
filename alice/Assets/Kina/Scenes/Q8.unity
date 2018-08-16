@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 719862}
   - component: {fileID: 719863}
+  - component: {fileID: 719864}
   m_Layer: 0
   m_Name: puzzle56_44
   m_TagString: K_Piece
@@ -136,7 +137,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 719861}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.16, y: -3.37, z: 0}
+  m_LocalPosition: {x: 11.66, y: -3.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -187,6 +188,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &719864
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 719861}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5636693
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,6 +209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5636694}
   - component: {fileID: 5636695}
+  - component: {fileID: 5636696}
   m_Layer: 0
   m_Name: puzzle56_38
   m_TagString: K_Piece
@@ -210,7 +224,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 5636693}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.55, y: -1.71, z: 0}
+  m_LocalPosition: {x: 4.85, y: -9.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -261,6 +275,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &5636696
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 5636693}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &15573954
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,6 +522,7 @@ GameObject:
   m_Component:
   - component: {fileID: 71804898}
   - component: {fileID: 71804899}
+  - component: {fileID: 71804900}
   m_Layer: 0
   m_Name: puzzle56_22
   m_TagString: K_Piece
@@ -510,7 +537,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 71804897}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.6, y: 1.7, z: 0}
+  m_LocalPosition: {x: 11.28, y: 2.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -561,6 +588,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &71804900
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 71804897}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &85132711
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,6 +609,7 @@ GameObject:
   m_Component:
   - component: {fileID: 85132712}
   - component: {fileID: 85132713}
+  - component: {fileID: 85132714}
   m_Layer: 0
   m_Name: puzzle20_17
   m_TagString: K_Piece
@@ -584,7 +624,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 85132711}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.104, y: -4.754, z: 0}
+  m_LocalPosition: {x: 10.21, y: -7.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059986938}
@@ -635,6 +675,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &85132714
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 85132711}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &88656558
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,6 +936,7 @@ GameObject:
   m_Component:
   - component: {fileID: 101495855}
   - component: {fileID: 101495856}
+  - component: {fileID: 101495857}
   m_Layer: 0
   m_Name: puzzle20_06
   m_TagString: K_Piece
@@ -898,7 +951,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 101495854}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.388, y: 2.456, z: 0}
+  m_LocalPosition: {x: -2.95, y: -9.59, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059986938}
@@ -949,6 +1002,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &101495857
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 101495854}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &102912170
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,6 +1023,7 @@ GameObject:
   m_Component:
   - component: {fileID: 102912171}
   - component: {fileID: 102912172}
+  - component: {fileID: 102912173}
   m_Layer: 0
   m_Name: puzzle20_16
   m_TagString: K_Piece
@@ -972,7 +1038,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 102912170}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.11, y: -2.4, z: 0}
+  m_LocalPosition: {x: 12, y: -4.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059986938}
@@ -1023,6 +1089,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &102912173
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 102912170}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &107544563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1155,6 +1233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 119524593}
   - component: {fileID: 119524594}
+  - component: {fileID: 119524595}
   m_Layer: 0
   m_Name: puzzle35_25
   m_TagString: K_Piece
@@ -1169,7 +1248,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 119524592}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.02, y: -2.36, z: 0}
+  m_LocalPosition: {x: -14.86, y: -4.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -1220,6 +1299,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &119524595
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 119524592}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &120119875
 GameObject:
   m_ObjectHideFlags: 0
@@ -1270,6 +1361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 129457564}
   - component: {fileID: 129457565}
+  - component: {fileID: 129457566}
   m_Layer: 0
   m_Name: puzzle35_02
   m_TagString: K_Piece
@@ -1284,7 +1376,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 129457563}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.48, y: 4.72, z: 0}
+  m_LocalPosition: {x: -11.44, y: -6.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -1335,6 +1427,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &129457566
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 129457563}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &136147828
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,6 +1489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 146457771}
   - component: {fileID: 146457772}
+  - component: {fileID: 146457773}
   m_Layer: 0
   m_Name: puzzle56_29
   m_TagString: K_Piece
@@ -1399,7 +1504,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 146457770}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.18, y: 0.02, z: 0}
+  m_LocalPosition: {x: -13.97, y: -3.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -1450,6 +1555,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &146457773
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 146457770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &147518572
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,6 +1576,7 @@ GameObject:
   m_Component:
   - component: {fileID: 147518573}
   - component: {fileID: 147518574}
+  - component: {fileID: 147518575}
   m_Layer: 0
   m_Name: puzzle35_14
   m_TagString: K_Piece
@@ -1473,7 +1591,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 147518572}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.18, y: 2.38, z: 0}
+  m_LocalPosition: {x: 1.32, y: -10.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -1524,6 +1642,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &147518575
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 147518572}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &175525232
 GameObject:
   m_ObjectHideFlags: 0
@@ -1779,6 +1909,7 @@ GameObject:
   m_Component:
   - component: {fileID: 223245859}
   - component: {fileID: 223245860}
+  - component: {fileID: 223245861}
   m_Layer: 0
   m_Name: puzzle56_15
   m_TagString: K_Piece
@@ -1793,7 +1924,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 223245858}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6, y: 3.39, z: 0}
+  m_LocalPosition: {x: 11, y: 6.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -1844,6 +1975,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &223245861
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 223245858}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &223347972
 GameObject:
   m_ObjectHideFlags: 0
@@ -1853,6 +1996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 223347973}
   - component: {fileID: 223347974}
+  - component: {fileID: 223347975}
   m_Layer: 0
   m_Name: puzzle56_52
   m_TagString: K_Piece
@@ -1867,7 +2011,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 223347972}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.13, y: -5.08, z: 0}
+  m_LocalPosition: {x: -16.69, y: -3.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -1918,6 +2062,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &223347975
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 223347972}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &233219803
 GameObject:
   m_ObjectHideFlags: 0
@@ -1927,6 +2083,7 @@ GameObject:
   m_Component:
   - component: {fileID: 233219804}
   - component: {fileID: 233219805}
+  - component: {fileID: 233219806}
   m_Layer: 0
   m_Name: puzzle56_20
   m_TagString: K_Piece
@@ -1941,7 +2098,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 233219803}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.24, y: 1.71, z: 0}
+  m_LocalPosition: {x: -11.32, y: -0.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -1992,6 +2149,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &233219806
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 233219803}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &249644470
 GameObject:
   m_ObjectHideFlags: 0
@@ -2042,6 +2211,7 @@ GameObject:
   m_Component:
   - component: {fileID: 251160092}
   - component: {fileID: 251160093}
+  - component: {fileID: 251160094}
   m_Layer: 0
   m_Name: puzzle56_53
   m_TagString: K_Piece
@@ -2056,7 +2226,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 251160091}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.19, y: -5.14, z: 0}
+  m_LocalPosition: {x: 15.52, y: -9.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -2107,6 +2277,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &251160094
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 251160091}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &252887945
 GameObject:
   m_ObjectHideFlags: 0
@@ -2157,6 +2339,7 @@ GameObject:
   m_Component:
   - component: {fileID: 253991294}
   - component: {fileID: 253991295}
+  - component: {fileID: 253991296}
   m_Layer: 0
   m_Name: puzzle56_12
   m_TagString: K_Piece
@@ -2171,7 +2354,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 253991293}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.24, y: 3.44, z: 0}
+  m_LocalPosition: {x: -13.24, y: 8.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -2222,6 +2405,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &253991296
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 253991293}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &278356569
 GameObject:
   m_ObjectHideFlags: 0
@@ -2231,6 +2426,7 @@ GameObject:
   m_Component:
   - component: {fileID: 278356570}
   - component: {fileID: 278356571}
+  - component: {fileID: 278356572}
   m_Layer: 0
   m_Name: puzzle20_07
   m_TagString: K_Piece
@@ -2245,7 +2441,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 278356569}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.38, y: 2.39, z: 0}
+  m_LocalPosition: {x: -13.81, y: -4.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059986938}
@@ -2296,6 +2492,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &278356572
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 278356569}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &280376048
 GameObject:
   m_ObjectHideFlags: 0
@@ -2387,6 +2595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 286367962}
   - component: {fileID: 286367963}
+  - component: {fileID: 286367964}
   m_Layer: 0
   m_Name: puzzle56_41
   m_TagString: K_Piece
@@ -2401,7 +2610,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 286367961}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.35, y: -3.52, z: 0}
+  m_LocalPosition: {x: 12.22, y: -1.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -2452,6 +2661,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &286367964
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 286367961}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &294329404
 GameObject:
   m_ObjectHideFlags: 0
@@ -2502,6 +2723,7 @@ GameObject:
   m_Component:
   - component: {fileID: 296555977}
   - component: {fileID: 296555978}
+  - component: {fileID: 296555979}
   m_Layer: 0
   m_Name: puzzle35_31
   m_TagString: K_Piece
@@ -2516,7 +2738,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 296555976}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.73, y: -4.72, z: 0}
+  m_LocalPosition: {x: -7.94, y: 7.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -2567,6 +2789,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &296555979
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 296555976}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &309723357
 GameObject:
   m_ObjectHideFlags: 0
@@ -2617,6 +2851,7 @@ GameObject:
   m_Component:
   - component: {fileID: 311963637}
   - component: {fileID: 311963638}
+  - component: {fileID: 311963639}
   m_Layer: 0
   m_Name: puzzle56_23
   m_TagString: K_Piece
@@ -2631,7 +2866,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 311963636}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.03, y: 1.75, z: 0}
+  m_LocalPosition: {x: -14.13, y: -1.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -2682,6 +2917,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &311963639
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 311963636}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &315031819
 GameObject:
   m_ObjectHideFlags: 0
@@ -2691,6 +2938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 315031820}
   - component: {fileID: 315031821}
+  - component: {fileID: 315031822}
   m_Layer: 0
   m_Name: puzzle20_11
   m_TagString: K_Piece
@@ -2705,7 +2953,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 315031819}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.374, y: 0.019, z: 0}
+  m_LocalPosition: {x: 5.66, y: -8.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059986938}
@@ -2756,6 +3004,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &315031822
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 315031819}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &342541136
 GameObject:
   m_ObjectHideFlags: 0
@@ -2765,6 +3025,7 @@ GameObject:
   m_Component:
   - component: {fileID: 342541137}
   - component: {fileID: 342541138}
+  - component: {fileID: 342541139}
   m_Layer: 0
   m_Name: puzzle35_06
   m_TagString: K_Piece
@@ -2779,7 +3040,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 342541136}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.403, y: 4.709, z: 0}
+  m_LocalPosition: {x: 10.27, y: 8.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -2830,6 +3091,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &342541139
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 342541136}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &355614416
 GameObject:
   m_ObjectHideFlags: 0
@@ -2839,6 +3112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 355614417}
   - component: {fileID: 355614418}
+  - component: {fileID: 355614419}
   m_Layer: 0
   m_Name: puzzle35_01
   m_TagString: K_Piece
@@ -2853,7 +3127,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 355614416}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.12, y: 4.74, z: 0}
+  m_LocalPosition: {x: -0.1, y: -7.76, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -2904,6 +3178,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &355614419
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 355614416}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &360539637
 GameObject:
   m_ObjectHideFlags: 0
@@ -2913,6 +3199,7 @@ GameObject:
   m_Component:
   - component: {fileID: 360539638}
   - component: {fileID: 360539639}
+  - component: {fileID: 360539640}
   m_Layer: 0
   m_Name: puzzle56_50
   m_TagString: K_Piece
@@ -2927,7 +3214,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 360539637}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.96, y: -5.1, z: 0}
+  m_LocalPosition: {x: 10.49, y: -10.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -2978,6 +3265,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &360539640
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 360539637}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &374092761
 GameObject:
   m_ObjectHideFlags: 0
@@ -3069,6 +3368,7 @@ GameObject:
   m_Component:
   - component: {fileID: 392606652}
   - component: {fileID: 392606653}
+  - component: {fileID: 392606654}
   m_Layer: 0
   m_Name: puzzle56_01
   m_TagString: K_Piece
@@ -3083,7 +3383,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 392606651}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.341, y: 5.061, z: 0}
+  m_LocalPosition: {x: 5.64, y: 7.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -3134,6 +3434,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &392606654
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 392606651}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &399597635
 GameObject:
   m_ObjectHideFlags: 0
@@ -3143,6 +3455,7 @@ GameObject:
   m_Component:
   - component: {fileID: 399597636}
   - component: {fileID: 399597637}
+  - component: {fileID: 399597638}
   m_Layer: 0
   m_Name: puzzle20_09
   m_TagString: K_Piece
@@ -3157,7 +3470,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 399597635}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.119, y: 0, z: 0}
+  m_LocalPosition: {x: -11.8, y: 1.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059986938}
@@ -3208,6 +3521,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &399597638
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 399597635}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &408221036
 GameObject:
   m_ObjectHideFlags: 0
@@ -3335,7 +3660,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 9e516c56c810755449c2e504a00c4f05, type: 2}
+  - {fileID: 2100000, guid: 3fc9fca2016db00488e7d8a6fd6a616f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3371,6 +3696,7 @@ GameObject:
   m_Component:
   - component: {fileID: 433903366}
   - component: {fileID: 433903367}
+  - component: {fileID: 433903368}
   m_Layer: 0
   m_Name: puzzle35_20
   m_TagString: K_Piece
@@ -3385,7 +3711,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 433903365}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.42, y: -0.04, z: 0}
+  m_LocalPosition: {x: -14.67, y: 3.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -3436,6 +3762,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &433903368
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 433903365}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &437004794
 GameObject:
   m_ObjectHideFlags: 0
@@ -3527,6 +3865,7 @@ GameObject:
   m_Component:
   - component: {fileID: 440606677}
   - component: {fileID: 440606678}
+  - component: {fileID: 440606679}
   m_Layer: 0
   m_Name: puzzle20_05
   m_TagString: K_Piece
@@ -3541,7 +3880,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 440606676}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.12, y: 2.418, z: 0}
+  m_LocalPosition: {x: -12.22, y: 6.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059986938}
@@ -3592,6 +3931,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &440606679
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 440606676}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &442029673
 GameObject:
   m_ObjectHideFlags: 0
@@ -3642,6 +3993,7 @@ GameObject:
   m_Component:
   - component: {fileID: 446492106}
   - component: {fileID: 446492107}
+  - component: {fileID: 446492108}
   m_Layer: 0
   m_Name: puzzle56_42
   m_TagString: K_Piece
@@ -3656,7 +4008,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 446492105}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.01, y: -3.48, z: 0}
+  m_LocalPosition: {x: 15.65, y: -2.94, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -3707,6 +4059,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &446492108
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 446492105}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &456856485
 GameObject:
   m_ObjectHideFlags: 0
@@ -3798,6 +4162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 472389138}
   - component: {fileID: 472389139}
+  - component: {fileID: 472389140}
   m_Layer: 0
   m_Name: puzzle20_03
   m_TagString: K_Piece
@@ -3812,7 +4177,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 472389137}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.36, y: 4.72, z: 0}
+  m_LocalPosition: {x: -10.13, y: -9.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059986938}
@@ -3863,6 +4228,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &472389140
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 472389137}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &477552391
 GameObject:
   m_ObjectHideFlags: 0
@@ -3872,6 +4249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 477552392}
   - component: {fileID: 477552393}
+  - component: {fileID: 477552394}
   m_Layer: 0
   m_Name: puzzle56_28
   m_TagString: K_Piece
@@ -3886,7 +4264,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 477552391}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.21, y: -0.04, z: 0}
+  m_LocalPosition: {x: -0.39, y: -7.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -3937,6 +4315,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &477552394
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 477552391}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &481442874
 GameObject:
   m_ObjectHideFlags: 0
@@ -4028,6 +4418,7 @@ GameObject:
   m_Component:
   - component: {fileID: 484277743}
   - component: {fileID: 484277744}
+  - component: {fileID: 484277745}
   m_Layer: 0
   m_Name: puzzle56_37
   m_TagString: K_Piece
@@ -4042,7 +4433,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 484277742}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.18, y: -1.75, z: 0}
+  m_LocalPosition: {x: 5.91, y: -7.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -4093,6 +4484,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &484277745
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 484277742}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &489477998
 GameObject:
   m_ObjectHideFlags: 0
@@ -4102,6 +4505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 489477999}
   - component: {fileID: 489478000}
+  - component: {fileID: 489478001}
   m_Layer: 0
   m_Name: puzzle56_27
   m_TagString: K_Piece
@@ -4116,7 +4520,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 489477998}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.62, y: 0.01, z: 0}
+  m_LocalPosition: {x: -11.3, y: -2.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -4167,6 +4571,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &489478001
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489477998}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &496069381
 GameObject:
   m_ObjectHideFlags: 0
@@ -4176,6 +4592,7 @@ GameObject:
   m_Component:
   - component: {fileID: 496069382}
   - component: {fileID: 496069383}
+  - component: {fileID: 496069384}
   m_Layer: 0
   m_Name: puzzle56_26
   m_TagString: K_Piece
@@ -4190,7 +4607,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 496069381}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: -0.07, z: 0}
+  m_LocalPosition: {x: -1.82, y: -9.59, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -4241,6 +4658,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &496069384
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 496069381}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &503619775
 GameObject:
   m_ObjectHideFlags: 0
@@ -4332,6 +4761,7 @@ GameObject:
   m_Component:
   - component: {fileID: 508068606}
   - component: {fileID: 508068607}
+  - component: {fileID: 508068608}
   m_Layer: 0
   m_Name: puzzle35_15
   m_TagString: K_Piece
@@ -4346,7 +4776,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 508068605}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.11, y: 0, z: 0}
+  m_LocalPosition: {x: -14.21, y: 6.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -4397,6 +4827,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &508068608
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 508068605}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &515544059
 GameObject:
   m_ObjectHideFlags: 0
@@ -4447,6 +4889,7 @@ GameObject:
   m_Component:
   - component: {fileID: 527543514}
   - component: {fileID: 527543515}
+  - component: {fileID: 527543516}
   m_Layer: 0
   m_Name: puzzle35_05
   m_TagString: K_Piece
@@ -4461,7 +4904,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 527543513}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.712, y: 4.69, z: 0}
+  m_LocalPosition: {x: -3.66, y: -7.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -4512,6 +4955,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &527543516
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 527543513}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &527645057
 GameObject:
   m_ObjectHideFlags: 0
@@ -4562,6 +5017,7 @@ GameObject:
   m_Component:
   - component: {fileID: 528594879}
   - component: {fileID: 528594880}
+  - component: {fileID: 528594881}
   m_Layer: 0
   m_Name: puzzle56_04
   m_TagString: K_Piece
@@ -4576,7 +5032,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 528594878}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.223, y: 5.093, z: 0}
+  m_LocalPosition: {x: 8.44, y: 8.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -4627,6 +5083,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &528594881
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 528594878}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &530004447
 GameObject:
   m_ObjectHideFlags: 0
@@ -4636,6 +5104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 530004448}
   - component: {fileID: 530004449}
+  - component: {fileID: 530004450}
   m_Layer: 0
   m_Name: puzzle35_22
   m_TagString: K_Piece
@@ -4650,7 +5119,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 530004447}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.11, y: -2.41, z: 0}
+  m_LocalPosition: {x: -12.22, y: 0.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -4701,6 +5170,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &530004450
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 530004447}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &541760065
 GameObject:
   m_ObjectHideFlags: 0
@@ -4751,6 +5232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 548563317}
   - component: {fileID: 548563318}
+  - component: {fileID: 548563319}
   m_Layer: 0
   m_Name: puzzle35_26
   m_TagString: K_Piece
@@ -4765,7 +5247,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 548563316}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.78, y: -2.39, z: 0}
+  m_LocalPosition: {x: 11.42, y: -6.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -4816,6 +5298,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &548563319
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 548563316}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &552876764
 GameObject:
   m_ObjectHideFlags: 0
@@ -4948,6 +5442,7 @@ GameObject:
   m_Component:
   - component: {fileID: 632358884}
   - component: {fileID: 632358885}
+  - component: {fileID: 632358886}
   m_Layer: 0
   m_Name: puzzle20_12
   m_TagString: K_Piece
@@ -4962,7 +5457,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 632358883}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.122, y: 0.013, z: 0}
+  m_LocalPosition: {x: 12.99, y: 5.58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059986938}
@@ -5013,6 +5508,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &632358886
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 632358883}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &634010196
 GameObject:
   m_ObjectHideFlags: 0
@@ -5022,6 +5529,7 @@ GameObject:
   m_Component:
   - component: {fileID: 634010197}
   - component: {fileID: 634010198}
+  - component: {fileID: 634010199}
   m_Layer: 0
   m_Name: puzzle35_07
   m_TagString: K_Piece
@@ -5036,7 +5544,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 634010196}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.148, y: 4.698, z: 0}
+  m_LocalPosition: {x: 11.71, y: 2.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -5087,6 +5595,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &634010199
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 634010196}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &639540608
 GameObject:
   m_ObjectHideFlags: 0
@@ -5292,6 +5812,7 @@ GameObject:
   m_Component:
   - component: {fileID: 664780233}
   - component: {fileID: 664780234}
+  - component: {fileID: 664780235}
   m_Layer: 0
   m_Name: puzzle35_28
   m_TagString: K_Piece
@@ -5306,7 +5827,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 664780232}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.16, y: -2.49, z: 0}
+  m_LocalPosition: {x: -11.79, y: -9.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -5357,6 +5878,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &664780235
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 664780232}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &669616880
 GameObject:
   m_ObjectHideFlags: 0
@@ -5366,6 +5899,7 @@ GameObject:
   m_Component:
   - component: {fileID: 669616881}
   - component: {fileID: 669616882}
+  - component: {fileID: 669616883}
   m_Layer: 0
   m_Name: puzzle56_46
   m_TagString: K_Piece
@@ -5380,7 +5914,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 669616880}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.57, y: -3.42, z: 0}
+  m_LocalPosition: {x: 11.66, y: -5.88, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -5431,6 +5965,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &669616883
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 669616880}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &673088359
 GameObject:
   m_ObjectHideFlags: 0
@@ -5440,6 +5986,7 @@ GameObject:
   m_Component:
   - component: {fileID: 673088360}
   - component: {fileID: 673088361}
+  - component: {fileID: 673088362}
   m_Layer: 0
   m_Name: puzzle56_07
   m_TagString: K_Piece
@@ -5454,7 +6001,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 673088359}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.371, y: 5.089, z: 0}
+  m_LocalPosition: {x: 9.47, y: -7.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -5505,6 +6052,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &673088362
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 673088359}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &708933449
 GameObject:
   m_ObjectHideFlags: 0
@@ -5555,6 +6114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 721434479}
   - component: {fileID: 721434480}
+  - component: {fileID: 721434481}
   m_Layer: 0
   m_Name: puzzle35_12
   m_TagString: K_Piece
@@ -5569,7 +6129,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 721434478}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.74, y: 2.43, z: 0}
+  m_LocalPosition: {x: 14.46, y: -1.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -5620,6 +6180,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &721434481
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 721434478}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &726660188
 GameObject:
   m_ObjectHideFlags: 0
@@ -5670,6 +6242,7 @@ GameObject:
   m_Component:
   - component: {fileID: 732871545}
   - component: {fileID: 732871546}
+  - component: {fileID: 732871547}
   m_Layer: 0
   m_Name: puzzle56_02
   m_TagString: K_Piece
@@ -5684,7 +6257,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 732871544}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.995, y: 5.08, z: 0}
+  m_LocalPosition: {x: -11.34, y: 4.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -5735,6 +6308,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &732871547
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 732871544}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &744299753
 GameObject:
   m_ObjectHideFlags: 0
@@ -5744,6 +6329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 744299754}
   - component: {fileID: 744299755}
+  - component: {fileID: 744299756}
   m_Layer: 0
   m_Name: puzzle35_23
   m_TagString: K_Piece
@@ -5758,7 +6344,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 744299753}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.46, y: -2.42, z: 0}
+  m_LocalPosition: {x: -15.2, y: -0.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -5809,6 +6395,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &744299756
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 744299753}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &748789879
 GameObject:
   m_ObjectHideFlags: 0
@@ -5818,6 +6416,7 @@ GameObject:
   m_Component:
   - component: {fileID: 748789880}
   - component: {fileID: 748789881}
+  - component: {fileID: 748789882}
   m_Layer: 0
   m_Name: puzzle20_14
   m_TagString: K_Piece
@@ -5832,7 +6431,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 748789879}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.342, y: -2.439, z: 0}
+  m_LocalPosition: {x: 12.32, y: 0.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059986938}
@@ -5883,6 +6482,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &748789882
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 748789879}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &759807448
 GameObject:
   m_ObjectHideFlags: 0
@@ -5933,6 +6544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 761909846}
   - component: {fileID: 761909847}
+  - component: {fileID: 761909848}
   m_Layer: 0
   m_Name: puzzle35_17
   m_TagString: K_Piece
@@ -5947,7 +6559,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 761909845}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.73, y: -0, z: 0}
+  m_LocalPosition: {x: -2.94, y: -10.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -5998,6 +6610,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &761909848
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 761909845}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &762328748
 GameObject:
   m_ObjectHideFlags: 0
@@ -6007,6 +6631,7 @@ GameObject:
   m_Component:
   - component: {fileID: 762328749}
   - component: {fileID: 762328750}
+  - component: {fileID: 762328751}
   m_Layer: 0
   m_Name: puzzle56_13
   m_TagString: K_Piece
@@ -6021,7 +6646,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 762328748}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.17, y: 3.43, z: 0}
+  m_LocalPosition: {x: -7.26, y: 7.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -6072,6 +6697,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &762328751
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 762328748}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &774960926
 GameObject:
   m_ObjectHideFlags: 0
@@ -6122,6 +6759,7 @@ GameObject:
   m_Component:
   - component: {fileID: 783545410}
   - component: {fileID: 783545411}
+  - component: {fileID: 783545412}
   m_Layer: 0
   m_Name: puzzle35_10
   m_TagString: K_Piece
@@ -6136,7 +6774,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 783545409}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.78, y: 2.39, z: 0}
+  m_LocalPosition: {x: 6.96, y: 7.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -6187,6 +6825,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &783545412
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 783545409}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &797315753
 GameObject:
   m_ObjectHideFlags: 0
@@ -6196,6 +6846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 797315754}
   - component: {fileID: 797315755}
+  - component: {fileID: 797315756}
   m_Layer: 0
   m_Name: puzzle35_32
   m_TagString: K_Piece
@@ -6210,7 +6861,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 797315753}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.02, y: -4.7, z: 0}
+  m_LocalPosition: {x: 14.79, y: -7.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -6261,6 +6912,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &797315756
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 797315753}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &801726503
 GameObject:
   m_ObjectHideFlags: 0
@@ -6352,6 +7015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 829027036}
   - component: {fileID: 829027037}
+  - component: {fileID: 829027038}
   m_Layer: 0
   m_Name: puzzle35_04
   m_TagString: K_Piece
@@ -6366,7 +7030,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 829027035}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.021, y: 4.721, z: 0}
+  m_LocalPosition: {x: 11.91, y: 5.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -6417,6 +7081,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &829027038
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 829027035}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &830645881
 GameObject:
   m_ObjectHideFlags: 0
@@ -6426,6 +7102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 830645882}
   - component: {fileID: 830645883}
+  - component: {fileID: 830645884}
   m_Layer: 0
   m_Name: puzzle20_13
   m_TagString: K_Piece
@@ -6440,7 +7117,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 830645881}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.105, y: -2.389, z: 0}
+  m_LocalPosition: {x: 14.4, y: 2.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059986938}
@@ -6491,6 +7168,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &830645884
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 830645881}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &845157430
 GameObject:
   m_ObjectHideFlags: 0
@@ -6582,6 +7271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 860141885}
   - component: {fileID: 860141886}
+  - component: {fileID: 860141887}
   m_Layer: 0
   m_Name: puzzle20_10
   m_TagString: K_Piece
@@ -6596,7 +7286,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 860141884}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.384, y: -0.055, z: 0}
+  m_LocalPosition: {x: -12.93, y: -1.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059986938}
@@ -6647,6 +7337,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &860141887
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 860141884}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &867736408
 GameObject:
   m_ObjectHideFlags: 0
@@ -6656,6 +7358,7 @@ GameObject:
   m_Component:
   - component: {fileID: 867736409}
   - component: {fileID: 867736410}
+  - component: {fileID: 867736411}
   m_Layer: 0
   m_Name: puzzle56_33
   m_TagString: K_Piece
@@ -6670,7 +7373,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 867736408}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.34, y: -1.76, z: 0}
+  m_LocalPosition: {x: 1.53, y: -9.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -6721,6 +7424,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &867736411
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 867736408}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &901863807
 GameObject:
   m_ObjectHideFlags: 0
@@ -6771,6 +7486,7 @@ GameObject:
   m_Component:
   - component: {fileID: 923156227}
   - component: {fileID: 923156228}
+  - component: {fileID: 923156229}
   m_Layer: 0
   m_Name: puzzle20_04
   m_TagString: K_Piece
@@ -6785,7 +7501,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 923156226}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.07, y: 4.7, z: 0}
+  m_LocalPosition: {x: -5.08, y: -7.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059986938}
@@ -6836,6 +7552,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &923156229
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 923156226}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &940550348
 GameObject:
   m_ObjectHideFlags: 0
@@ -6886,6 +7614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 949220138}
   - component: {fileID: 949220139}
+  - component: {fileID: 949220140}
   m_Layer: 0
   m_Name: puzzle35_29
   m_TagString: K_Piece
@@ -6900,7 +7629,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 949220137}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.17, y: -4.69, z: 0}
+  m_LocalPosition: {x: -8.31, y: -7.58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -6951,6 +7680,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &949220140
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 949220137}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &950567615
 GameObject:
   m_ObjectHideFlags: 0
@@ -6960,6 +7701,7 @@ GameObject:
   m_Component:
   - component: {fileID: 950567616}
   - component: {fileID: 950567617}
+  - component: {fileID: 950567618}
   m_Layer: 0
   m_Name: puzzle56_54
   m_TagString: K_Piece
@@ -6974,7 +7716,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 950567615}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.625, y: -5.061, z: 0}
+  m_LocalPosition: {x: -16.12, y: 5.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -7025,6 +7767,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &950567618
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 950567615}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &953577909
 GameObject:
   m_ObjectHideFlags: 0
@@ -7075,6 +7829,7 @@ GameObject:
   m_Component:
   - component: {fileID: 953795172}
   - component: {fileID: 953795173}
+  - component: {fileID: 953795174}
   m_Layer: 0
   m_Name: puzzle20_18
   m_TagString: K_Piece
@@ -7089,7 +7844,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 953795171}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.301, y: -4.757, z: 0}
+  m_LocalPosition: {x: 15.36, y: -7.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059986938}
@@ -7140,6 +7895,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &953795174
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 953795171}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &960148539
 GameObject:
   m_ObjectHideFlags: 0
@@ -7190,6 +7957,7 @@ GameObject:
   m_Component:
   - component: {fileID: 980611910}
   - component: {fileID: 980611911}
+  - component: {fileID: 980611912}
   m_Layer: 0
   m_Name: puzzle20_08
   m_TagString: K_Piece
@@ -7204,7 +7972,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 980611909}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.16, y: 2.41, z: 0}
+  m_LocalPosition: {x: 1.37, y: -7.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059986938}
@@ -7255,6 +8023,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &980611912
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 980611909}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &992412041
 GameObject:
   m_ObjectHideFlags: 0
@@ -7264,6 +8044,7 @@ GameObject:
   m_Component:
   - component: {fileID: 992412042}
   - component: {fileID: 992412043}
+  - component: {fileID: 992412044}
   m_Layer: 0
   m_Name: puzzle56_56
   m_TagString: K_Piece
@@ -7278,7 +8059,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 992412041}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.337, y: -5.057, z: 0}
+  m_LocalPosition: {x: -16.55, y: 8.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -7329,6 +8110,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &992412044
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 992412041}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1011860899
 GameObject:
   m_ObjectHideFlags: 0
@@ -7461,6 +8254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1023964203}
   - component: {fileID: 1023964204}
+  - component: {fileID: 1023964205}
   m_Layer: 0
   m_Name: puzzle35_30
   m_TagString: K_Piece
@@ -7475,7 +8269,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1023964202}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.51, y: -4.7, z: 0}
+  m_LocalPosition: {x: -7.09, y: -10.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -7526,6 +8320,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1023964205
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1023964202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1027974020
 GameObject:
   m_ObjectHideFlags: 0
@@ -7740,6 +8546,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1057390620}
   - component: {fileID: 1057390621}
+  - component: {fileID: 1057390622}
   m_Layer: 0
   m_Name: puzzle56_45
   m_TagString: K_Piece
@@ -7754,7 +8561,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1057390619}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.23, y: -3.51, z: 0}
+  m_LocalPosition: {x: 14.6, y: -4.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -7805,6 +8612,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1057390622
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1057390619}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1074616549
 GameObject:
   m_ObjectHideFlags: 0
@@ -8072,6 +8891,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1129843347}
   - component: {fileID: 1129843348}
+  - component: {fileID: 1129843349}
   m_Layer: 0
   m_Name: puzzle56_03
   m_TagString: K_Piece
@@ -8086,7 +8906,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1129843346}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.612, y: 5.028, z: 0}
+  m_LocalPosition: {x: -13.21, y: 6.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -8137,6 +8957,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1129843349
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1129843346}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1130147915
 GameObject:
   m_ObjectHideFlags: 0
@@ -8187,6 +9019,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1135809509}
   - component: {fileID: 1135809510}
+  - component: {fileID: 1135809511}
   m_Layer: 0
   m_Name: puzzle56_36
   m_TagString: K_Piece
@@ -8201,7 +9034,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1135809508}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.21, y: -1.72, z: 0}
+  m_LocalPosition: {x: -11.42, y: -10.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -8252,6 +9085,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1135809511
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1135809508}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1137734537
 GameObject:
   m_ObjectHideFlags: 0
@@ -8261,6 +9106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1137734538}
   - component: {fileID: 1137734539}
+  - component: {fileID: 1137734540}
   m_Layer: 0
   m_Name: puzzle56_25
   m_TagString: K_Piece
@@ -8275,7 +9121,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1137734537}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.34, y: 0.01, z: 0}
+  m_LocalPosition: {x: 11.68, y: 0.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -8326,6 +9172,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1137734540
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1137734537}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1154207963
 GameObject:
   m_ObjectHideFlags: 0
@@ -8335,6 +9193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1154207964}
   - component: {fileID: 1154207965}
+  - component: {fileID: 1154207966}
   m_Layer: 0
   m_Name: puzzle56_21
   m_TagString: K_Piece
@@ -8349,7 +9208,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1154207963}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2, y: 1.63, z: 0}
+  m_LocalPosition: {x: -4.97, y: -9.88, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -8400,6 +9259,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1154207966
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1154207963}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1157475364
 GameObject:
   m_ObjectHideFlags: 0
@@ -8409,6 +9280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1157475365}
   - component: {fileID: 1157475366}
+  - component: {fileID: 1157475367}
   m_Layer: 0
   m_Name: puzzle56_34
   m_TagString: K_Piece
@@ -8423,7 +9295,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1157475364}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: -1.72, z: 0}
+  m_LocalPosition: {x: -12.38, y: -8.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -8474,6 +9346,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1157475367
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1157475364}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1160301839
 GameObject:
   m_ObjectHideFlags: 0
@@ -8524,6 +9408,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1166374457}
   - component: {fileID: 1166374458}
+  - component: {fileID: 1166374459}
   m_Layer: 0
   m_Name: puzzle35_03
   m_TagString: K_Piece
@@ -8538,7 +9423,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1166374456}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.722, y: 4.72, z: 0}
+  m_LocalPosition: {x: 3.31, y: -7.77, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -8589,6 +9474,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1166374459
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1166374456}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1168964516
 GameObject:
   m_ObjectHideFlags: 0
@@ -8598,6 +9495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1168964517}
   - component: {fileID: 1168964518}
+  - component: {fileID: 1168964519}
   m_Layer: 0
   m_Name: puzzle56_16
   m_TagString: K_Piece
@@ -8612,7 +9510,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1168964516}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.37, y: 3.43, z: 0}
+  m_LocalPosition: {x: 12.41, y: 8.77, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -8663,6 +9561,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1168964519
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1168964516}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1171319894
 GameObject:
   m_ObjectHideFlags: 0
@@ -8713,6 +9623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1184048222}
   - component: {fileID: 1184048223}
+  - component: {fileID: 1184048224}
   m_Layer: 0
   m_Name: puzzle56_40
   m_TagString: K_Piece
@@ -8727,7 +9638,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1184048221}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.35, y: -1.7, z: 0}
+  m_LocalPosition: {x: 15.21, y: -0.58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -8778,6 +9689,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1184048224
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1184048221}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1209828029
 GameObject:
   m_ObjectHideFlags: 0
@@ -8787,6 +9710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1209828030}
   - component: {fileID: 1209828031}
+  - component: {fileID: 1209828032}
   m_Layer: 0
   m_Name: puzzle35_34
   m_TagString: K_Piece
@@ -8801,7 +9725,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1209828029}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.49, y: -4.73, z: 0}
+  m_LocalPosition: {x: 13.72, y: -10.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -8852,6 +9776,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1209828032
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1209828029}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1212476540
 GameObject:
   m_ObjectHideFlags: 0
@@ -9008,6 +9944,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1224638800}
   - component: {fileID: 1224638801}
+  - component: {fileID: 1224638802}
   m_Layer: 0
   m_Name: puzzle56_05
   m_TagString: K_Piece
@@ -9022,7 +9959,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1224638799}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.211, y: 5.042, z: 0}
+  m_LocalPosition: {x: -14.49, y: 3.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -9073,6 +10010,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1224638802
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1224638799}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1238617961
 GameObject:
   m_ObjectHideFlags: 0
@@ -9082,6 +10031,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1238617962}
   - component: {fileID: 1238617963}
+  - component: {fileID: 1238617964}
   m_Layer: 0
   m_Name: puzzle56_08
   m_TagString: K_Piece
@@ -9096,7 +10046,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1238617961}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.997, y: 5.054, z: 0}
+  m_LocalPosition: {x: -8.13, y: -9.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -9147,6 +10097,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1238617964
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1238617961}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1288942865
 GameObject:
   m_ObjectHideFlags: 0
@@ -9363,6 +10325,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1344735031}
   - component: {fileID: 1344735032}
+  - component: {fileID: 1344735033}
   m_Layer: 0
   m_Name: puzzle56_06
   m_TagString: K_Piece
@@ -9377,7 +10340,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1344735030}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.539, y: 5.079, z: 0}
+  m_LocalPosition: {x: -9.21, y: -7.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -9428,6 +10391,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1344735033
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344735030}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1360870513
 GameObject:
   m_ObjectHideFlags: 0
@@ -9511,7 +10486,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: 1cf9ebedef47987429cc561ca8aa8f41, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9626,6 +10601,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1391614979}
   - component: {fileID: 1391614980}
+  - component: {fileID: 1391614981}
   m_Layer: 0
   m_Name: puzzle35_16
   m_TagString: K_Piece
@@ -9640,7 +10616,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1391614978}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.49, y: 0.03, z: 0}
+  m_LocalPosition: {x: -11.52, y: 4.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -9691,6 +10667,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1391614981
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1391614978}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1397394844
 GameObject:
   m_ObjectHideFlags: 0
@@ -9823,6 +10811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1426937810}
   - component: {fileID: 1426937811}
+  - component: {fileID: 1426937812}
   m_Layer: 0
   m_Name: puzzle56_48
   m_TagString: K_Piece
@@ -9837,7 +10826,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1426937809}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.35, y: -3.4, z: 0}
+  m_LocalPosition: {x: 14.79, y: -7.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -9888,6 +10877,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1426937812
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1426937809}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1432365463
 GameObject:
   m_ObjectHideFlags: 0
@@ -9938,6 +10939,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1444608040}
   - component: {fileID: 1444608041}
+  - component: {fileID: 1444608042}
   m_Layer: 0
   m_Name: puzzle56_31
   m_TagString: K_Piece
@@ -9952,7 +10954,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1444608039}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.04, y: 0.05, z: 0}
+  m_LocalPosition: {x: -11.3, y: -4.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -10003,6 +11005,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1444608042
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1444608039}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1455142265
 GameObject:
   m_ObjectHideFlags: 0
@@ -10012,6 +11026,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1455142266}
   - component: {fileID: 1455142267}
+  - component: {fileID: 1455142268}
   m_Layer: 0
   m_Name: puzzle35_09
   m_TagString: K_Piece
@@ -10026,7 +11041,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1455142265}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.55, y: 2.4, z: 0}
+  m_LocalPosition: {x: 13.78, y: 8.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -10077,6 +11092,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1455142268
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1455142265}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1462185115
 GameObject:
   m_ObjectHideFlags: 0
@@ -10209,6 +11236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1484263936}
   - component: {fileID: 1484263937}
+  - component: {fileID: 1484263938}
   m_Layer: 0
   m_Name: puzzle56_49
   m_TagString: K_Piece
@@ -10223,7 +11251,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1484263935}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.33, y: -5.09, z: 0}
+  m_LocalPosition: {x: 12.37, y: -8.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -10274,6 +11302,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1484263938
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1484263935}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1496541272
 GameObject:
   m_ObjectHideFlags: 0
@@ -10324,6 +11364,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1497702113}
   - component: {fileID: 1497702114}
+  - component: {fileID: 1497702115}
   m_Layer: 0
   m_Name: puzzle56_47
   m_TagString: K_Piece
@@ -10338,7 +11379,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1497702112}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.96, y: -3.48, z: 0}
+  m_LocalPosition: {x: 15.49, y: 8.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -10389,6 +11430,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1497702115
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1497702112}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1508854526
 GameObject:
   m_ObjectHideFlags: 0
@@ -10439,6 +11492,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1511897998}
   - component: {fileID: 1511897999}
+  - component: {fileID: 1511898000}
   m_Layer: 0
   m_Name: puzzle20_15
   m_TagString: K_Piece
@@ -10453,7 +11507,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1511897997}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.413, y: -2.453, z: 0}
+  m_LocalPosition: {x: 14.14, y: -2.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059986938}
@@ -10504,6 +11558,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1511898000
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1511897997}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1512594720
 GameObject:
   m_ObjectHideFlags: 0
@@ -10513,6 +11579,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1512594721}
   - component: {fileID: 1512594722}
+  - component: {fileID: 1512594723}
   m_Layer: 0
   m_Name: puzzle56_09
   m_TagString: K_Piece
@@ -10527,7 +11594,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1512594720}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.32, y: 3.4, z: 0}
+  m_LocalPosition: {x: -6.06, y: -7.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -10578,6 +11645,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1512594723
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1512594720}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1527000503
 GameObject:
   m_ObjectHideFlags: 0
@@ -10791,6 +11870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1562524292}
   - component: {fileID: 1562524293}
+  - component: {fileID: 1562524294}
   m_Layer: 0
   m_Name: puzzle35_19
   m_TagString: K_Piece
@@ -10805,7 +11885,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1562524291}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.73, y: 0.01, z: 0}
+  m_LocalPosition: {x: 4.99, y: -10.67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -10856,6 +11936,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1562524294
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1562524291}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1572093990
 GameObject:
   m_ObjectHideFlags: 0
@@ -10865,6 +11957,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1572093991}
   - component: {fileID: 1572093992}
+  - component: {fileID: 1572093993}
   m_Layer: 0
   m_Name: puzzle35_24
   m_TagString: K_Piece
@@ -10879,7 +11972,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1572093990}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.77, y: -2.44, z: 0}
+  m_LocalPosition: {x: -11.68, y: -2.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -10930,6 +12023,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1572093993
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1572093990}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1590873884
 GameObject:
   m_ObjectHideFlags: 0
@@ -10939,6 +12044,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1590873885}
   - component: {fileID: 1590873886}
+  - component: {fileID: 1590873887}
   m_Layer: 0
   m_Name: puzzle56_19
   m_TagString: K_Piece
@@ -10953,7 +12059,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1590873884}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.6, y: 1.73, z: 0}
+  m_LocalPosition: {x: 13.81, y: 3.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -11004,6 +12110,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1590873887
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1590873884}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1592127398
 GameObject:
   m_ObjectHideFlags: 0
@@ -11013,6 +12131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1592127399}
   - component: {fileID: 1592127400}
+  - component: {fileID: 1592127401}
   m_Layer: 0
   m_Name: puzzle35_27
   m_TagString: K_Piece
@@ -11027,7 +12146,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1592127398}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.54, y: -2.36, z: 0}
+  m_LocalPosition: {x: -14.68, y: -7.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -11078,6 +12197,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1592127401
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1592127398}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1599179696
 GameObject:
   m_ObjectHideFlags: 0
@@ -11366,6 +12497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1712725650}
   - component: {fileID: 1712725651}
+  - component: {fileID: 1712725652}
   m_Layer: 0
   m_Name: puzzle35_21
   m_TagString: K_Piece
@@ -11380,7 +12512,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1712725649}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.15, y: -0.03, z: 0}
+  m_LocalPosition: {x: 7.26, y: -8.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -11431,6 +12563,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1712725652
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1712725649}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1720498136
 GameObject:
   m_ObjectHideFlags: 0
@@ -11440,6 +12584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1720498137}
   - component: {fileID: 1720498138}
+  - component: {fileID: 1720498139}
   m_Layer: 0
   m_Name: puzzle20_20
   m_TagString: K_Piece
@@ -11454,7 +12599,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1720498136}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.094, y: -4.778, z: 0}
+  m_LocalPosition: {x: -9.17, y: 9.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059986938}
@@ -11505,6 +12650,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1720498139
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1720498136}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1728843880
 GameObject:
   m_ObjectHideFlags: 0
@@ -11555,6 +12712,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1729127195}
   - component: {fileID: 1729127196}
+  - component: {fileID: 1729127197}
   m_Layer: 0
   m_Name: puzzle56_55
   m_TagString: K_Piece
@@ -11569,7 +12727,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1729127194}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.066, y: -5.112, z: 0}
+  m_LocalPosition: {x: -17.24, y: -0.69, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -11620,6 +12778,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1729127197
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1729127194}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1737687944
 GameObject:
   m_ObjectHideFlags: 0
@@ -11629,6 +12799,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1737687945}
   - component: {fileID: 1737687946}
+  - component: {fileID: 1737687947}
   m_Layer: 0
   m_Name: puzzle56_18
   m_TagString: K_Piece
@@ -11643,7 +12814,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1737687944}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.98, y: 1.71, z: 0}
+  m_LocalPosition: {x: 11.02, y: 4.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -11694,6 +12865,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1737687947
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1737687944}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1741645693
 GameObject:
   m_ObjectHideFlags: 0
@@ -11744,6 +12927,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1750041337}
   - component: {fileID: 1750041338}
+  - component: {fileID: 1750041339}
   m_Layer: 0
   m_Name: puzzle56_32
   m_TagString: K_Piece
@@ -11758,7 +12942,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1750041336}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.36, y: -0.05, z: 0}
+  m_LocalPosition: {x: -14.26, y: -5.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -11809,6 +12993,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1750041339
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1750041336}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1750309349
 GameObject:
   m_ObjectHideFlags: 0
@@ -11963,6 +13159,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1769214484}
   - component: {fileID: 1769214485}
+  - component: {fileID: 1769214486}
   m_Layer: 0
   m_Name: puzzle56_24
   m_TagString: K_Piece
@@ -11977,7 +13174,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1769214483}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.36, y: 1.63, z: 0}
+  m_LocalPosition: {x: -3.43, y: -7.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -12028,6 +13225,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1769214486
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1769214483}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1769746563
 GameObject:
   m_ObjectHideFlags: 0
@@ -12078,6 +13287,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1773973256}
   - component: {fileID: 1773973257}
+  - component: {fileID: 1773973258}
   m_Layer: 0
   m_Name: puzzle56_51
   m_TagString: K_Piece
@@ -12092,7 +13302,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1773973255}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.57, y: -5.14, z: 0}
+  m_LocalPosition: {x: -16.66, y: -7.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -12143,6 +13353,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1773973258
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1773973255}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1804172159
 GameObject:
   m_ObjectHideFlags: 0
@@ -12282,6 +13504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1808950363}
   - component: {fileID: 1808950364}
+  - component: {fileID: 1808950365}
   m_Layer: 0
   m_Name: puzzle35_13
   m_TagString: K_Piece
@@ -12296,7 +13519,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1808950362}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.49, y: 2.4, z: 0}
+  m_LocalPosition: {x: 11.25, y: -2.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -12347,6 +13570,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1808950365
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1808950362}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1857301505
 GameObject:
   m_ObjectHideFlags: 0
@@ -12438,6 +13673,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1896159130}
   - component: {fileID: 1896159131}
+  - component: {fileID: 1896159132}
   m_Layer: 0
   m_Name: puzzle35_11
   m_TagString: K_Piece
@@ -12452,7 +13688,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1896159129}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.05, y: 2.39, z: 0}
+  m_LocalPosition: {x: -11.09, y: 8.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -12503,6 +13739,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1896159132
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1896159129}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1906442717
 GameObject:
   m_ObjectHideFlags: 0
@@ -12512,6 +13760,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1906442718}
   - component: {fileID: 1906442719}
+  - component: {fileID: 1906442720}
   m_Layer: 0
   m_Name: puzzle56_11
   m_TagString: K_Piece
@@ -12526,7 +13775,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1906442717}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.66, y: 3.36, z: 0}
+  m_LocalPosition: {x: -10.24, y: 7.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -12577,6 +13826,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1906442720
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1906442717}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1909020426
 GameObject:
   m_ObjectHideFlags: 0
@@ -12586,6 +13847,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1909020427}
   - component: {fileID: 1909020428}
+  - component: {fileID: 1909020429}
   m_Layer: 0
   m_Name: puzzle56_43
   m_TagString: K_Piece
@@ -12600,7 +13862,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1909020426}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.55, y: -3.49, z: 0}
+  m_LocalPosition: {x: -14.86, y: -9.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -12651,6 +13913,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1909020429
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1909020426}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1917323265
 GameObject:
   m_ObjectHideFlags: 0
@@ -12701,6 +13975,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1925102401}
   - component: {fileID: 1925102402}
+  - component: {fileID: 1925102403}
   m_Layer: 0
   m_Name: puzzle56_14
   m_TagString: K_Piece
@@ -12715,7 +13990,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1925102400}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.59, y: 3.44, z: 0}
+  m_LocalPosition: {x: -14.71, y: 1.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -12766,6 +14041,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1925102403
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1925102400}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1945319579
 GameObject:
   m_ObjectHideFlags: 0
@@ -12857,6 +14144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1946770523}
   - component: {fileID: 1946770524}
+  - component: {fileID: 1946770525}
   m_Layer: 0
   m_Name: puzzle56_35
   m_TagString: K_Piece
@@ -12871,7 +14159,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1946770522}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.54, y: -1.75, z: 0}
+  m_LocalPosition: {x: 3.04, y: -7.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -12922,6 +14210,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1946770525
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1946770522}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1962238541
 GameObject:
   m_ObjectHideFlags: 0
@@ -13035,6 +14335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1984024595}
   - component: {fileID: 1984024596}
+  - component: {fileID: 1984024597}
   m_Layer: 0
   m_Name: puzzle56_10
   m_TagString: K_Piece
@@ -13049,7 +14350,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1984024594}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.99, y: 3.46, z: 0}
+  m_LocalPosition: {x: -11.68, y: 1.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -13100,6 +14401,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1984024597
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1984024594}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1999185798
 GameObject:
   m_ObjectHideFlags: 0
@@ -13109,6 +14422,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1999185799}
   - component: {fileID: 1999185800}
+  - component: {fileID: 1999185801}
   m_Layer: 0
   m_Name: puzzle35_35
   m_TagString: K_Piece
@@ -13123,7 +14437,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1999185798}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.14, y: -4.77, z: 0}
+  m_LocalPosition: {x: 14.52, y: 2.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -13174,6 +14488,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1999185801
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1999185798}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2012506943
 GameObject:
   m_ObjectHideFlags: 0
@@ -13265,6 +14591,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2054155821}
   - component: {fileID: 2054155822}
+  - component: {fileID: 2054155823}
   m_Layer: 0
   m_Name: puzzle35_33
   m_TagString: K_Piece
@@ -13279,7 +14606,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2054155820}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.69, y: -4.76, z: 0}
+  m_LocalPosition: {x: 10.23, y: -8.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -13330,6 +14657,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2054155823
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2054155820}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2059986936
 GameObject:
   m_ObjectHideFlags: 0
@@ -13433,6 +14772,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2061811964}
   - component: {fileID: 2061811965}
+  - component: {fileID: 2061811966}
   m_Layer: 0
   m_Name: puzzle20_19
   m_TagString: K_Piece
@@ -13447,7 +14787,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2061811963}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.42, y: -4.803, z: 0}
+  m_LocalPosition: {x: 11.91, y: 8.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059986938}
@@ -13498,6 +14838,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2061811966
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2061811963}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2065805183
 GameObject:
   m_ObjectHideFlags: 0
@@ -13581,6 +14933,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2069735738}
   - component: {fileID: 2069735739}
+  - component: {fileID: 2069735740}
   m_Layer: 0
   m_Name: puzzle35_18
   m_TagString: K_Piece
@@ -13595,7 +14948,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2069735737}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.02, y: -0, z: 0}
+  m_LocalPosition: {x: 14.48, y: -4.77, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -13646,6 +14999,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2069735740
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2069735737}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2091537287
 GameObject:
   m_ObjectHideFlags: 0
@@ -13655,6 +15020,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2091537288}
   - component: {fileID: 2091537289}
+  - component: {fileID: 2091537290}
   m_Layer: 0
   m_Name: puzzle35_08
   m_TagString: K_Piece
@@ -13669,7 +15035,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2091537287}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.09, y: 2.33, z: 0}
+  m_LocalPosition: {x: 11.17, y: 0.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980000024}
@@ -13720,6 +15086,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2091537290
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2091537287}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2101631657
 GameObject:
   m_ObjectHideFlags: 0
@@ -13729,6 +15107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2101631658}
   - component: {fileID: 2101631659}
+  - component: {fileID: 2101631660}
   m_Layer: 0
   m_Name: puzzle56_17
   m_TagString: K_Piece
@@ -13743,7 +15122,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2101631657}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.3, y: 1.71, z: 0}
+  m_LocalPosition: {x: 13.57, y: 6.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -13794,6 +15173,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2101631660
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2101631657}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2109370404
 GameObject:
   m_ObjectHideFlags: 0
@@ -13844,6 +15235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2111396483}
   - component: {fileID: 2111396484}
+  - component: {fileID: 2111396485}
   m_Layer: 0
   m_Name: puzzle56_39
   m_TagString: K_Piece
@@ -13858,7 +15250,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2111396482}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.98, y: -1.74, z: 0}
+  m_LocalPosition: {x: 7.9, y: -9.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -13909,6 +15301,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2111396485
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2111396482}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2111402473
 GameObject:
   m_ObjectHideFlags: 0
@@ -13918,6 +15322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2111402474}
   - component: {fileID: 2111402475}
+  - component: {fileID: 2111402476}
   m_Layer: 0
   m_Name: puzzle20_01
   m_TagString: K_Piece
@@ -13932,7 +15337,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2111402473}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.11, y: 4.68, z: 0}
+  m_LocalPosition: {x: -12.06, y: -6.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059986938}
@@ -13983,6 +15388,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2111402476
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2111402473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2117098708
 GameObject:
   m_ObjectHideFlags: 0
@@ -14033,6 +15450,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2133844557}
   - component: {fileID: 2133844558}
+  - component: {fileID: 2133844559}
   m_Layer: 0
   m_Name: puzzle56_30
   m_TagString: K_Piece
@@ -14047,7 +15465,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2133844556}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.61, y: 0.04, z: 0}
+  m_LocalPosition: {x: 14.37, y: 1.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1330586933}
@@ -14098,6 +15516,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2133844559
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2133844556}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2145807486
 GameObject:
   m_ObjectHideFlags: 0
@@ -14107,6 +15537,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2145807487}
   - component: {fileID: 2145807488}
+  - component: {fileID: 2145807489}
   m_Layer: 0
   m_Name: puzzle20_02
   m_TagString: K_Piece
@@ -14121,7 +15552,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2145807486}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.43, y: 4.68, z: 0}
+  m_LocalPosition: {x: -14.16, y: 4.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059986938}
@@ -14172,3 +15603,15 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2145807489
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2145807486}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
