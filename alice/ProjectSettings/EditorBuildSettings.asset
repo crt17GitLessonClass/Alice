@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Miyaguni/Scenes/GameOver.unity
     guid: 411bc273910ea7440a4d0cc5030d2672
+  - enabled: 1
+    path: Assets/Miyaguni/Scenes/Ending.unity
+    guid: 7e4cb5f321695c64da5eb42182244fc3
   m_configObjects: {}
