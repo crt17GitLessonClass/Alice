@@ -6,9 +6,12 @@ using UnityEngine.SceneManagement;
 public class Controller : MonoBehaviour {
 
 	public GameObject cameraObject;
+	public GameObject seconds;
 	public GameObject retryButton;
 	public GameObject retireButton;
-	public GameObject coment;
+	public GameObject startButton;
+	public GameObject coment1;
+	public GameObject coment2;
 
 	public BoxCollider[] maruTrueCol;
 	public BoxCollider[] maruFalseCol;
@@ -31,7 +34,7 @@ public class Controller : MonoBehaviour {
 	float changingDist;
 
 	bool cameraMoving = false;
-	bool gameActive = true;
+	bool gameActive = false;
 
 	Camera Camera;
 	BoxCollider touchCol;
@@ -39,7 +42,6 @@ public class Controller : MonoBehaviour {
 	void Start(){
 		mistakeCountText.text = "あと" + mistakeCount + "こ";
 		timeText.text = "" + timeLimit;
-		StartCoroutine(CountDown());
 		cameraStartPos = cameraObject.transform.position;
 		Camera = cameraObject.GetComponent<Camera>();
 		touchCol = gameObject.GetComponent<BoxCollider>();
@@ -111,14 +113,39 @@ public class Controller : MonoBehaviour {
 		mistakeCount--;
 		mistakeCountText.text = "あと" + mistakeCount + "こ";
 		if(mistakeCount == 0){
-			GameMainCtrl.ceNum += 2;
+			GameMainCtrl.ceGet = 2;
 			GameMainCtrl.f_Q2 = true;
 			SceneManager.LoadScene("CutEnd");
 		}
 	}
 
+	public void OnStartButton(){
+		gameActive = true;
+		mistakeCountText.gameObject.SetActive(true);
+		timeText.gameObject.SetActive(true);
+		seconds.SetActive(true);
+		startButton.SetActive(false);
+		coment1.SetActive(false);
+		StartCoroutine(CountDown());
+	}
+
 	public void OnRetryButton(){
-		SceneManager.LoadScene("Q2");
+		mistakeCount = 5;
+		timeLimit = 60;
+		timeText.text = timeLimit.ToString();
+		retryButton.SetActive(false);
+		retireButton.SetActive(false);
+		coment2.SetActive(false);
+		timeText.gameObject.SetActive(true);
+		seconds.gameObject.SetActive(true);
+		mistakeCountText.gameObject.SetActive(true);
+		for(int i = 0; i < maruTrueCol.Length; i++){
+			maruFalseCol[i].enabled = true;
+			maruTrueCol[i].enabled = true;
+			maruFalseSprite[i].enabled = false;
+			maruTrueSprite[i].enabled = false;
+		}
+		StartCoroutine(CountDown());
 	}
 
 	public void OnRetireButton(){
@@ -129,12 +156,15 @@ public class Controller : MonoBehaviour {
 		for(int i = timeLimit; i >= 0; i--){
 			yield return new WaitForSeconds(1.0f);
 			timeLimit--;
-			timeText.text = "" + i;
+			timeText.text = timeLimit.ToString();
 		}
 		gameActive = false;
 		retryButton.SetActive(true);
 		retireButton.SetActive(true);
-		coment.SetActive(true);
+		coment2.SetActive(true);
+		seconds.SetActive(false);
+		timeText.gameObject.SetActive(false);
+		mistakeCountText.gameObject.SetActive(false);
 	}
 
 	Vector3 LimitingPos(Vector3 pos){

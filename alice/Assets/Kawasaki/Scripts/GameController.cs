@@ -18,30 +18,71 @@ public class GameController : MonoBehaviour {
     public GameObject Retrybutton;
 
     private int cutend = 3;
-  
 
-    float time = 60.0f;
+    [SerializeField]
+    private GameObject startbutton;
+    [SerializeField]
+    private GameObject panel;
+    [SerializeField]
+    private Text countdownText;
+
+    private bool startflag = false;
+
+    float time = 30.0f;
     Text timeText;
+    float countdowntime = 3.5f;
+
+    public bool movestart = false;
+
+    AudioSource audiosource;
+    [SerializeField]
+    AudioClip countSE;
+
+    [SerializeField]
+    AudioClip currectSE;
+
+    [SerializeField]
+    AudioClip incurrectSE;
+
+
 
     void Start() {
         timeText = GameObject.Find("timeText").GetComponent<Text>();
         Instantiate(Playerobj, Vector3.zero, Quaternion.identity);
+        audiosource = GetComponent<AudioSource>();
+
 
 
     }
 
     void Update() {
+        if (!startflag) { return; }
 
-        if (clear) { return; }
-
-        if (time <= 0) {
-            GameOver();
+        if (countdowntime > 0) {
+            countdowntime -= Time.deltaTime;
+            countdownText.GetComponent<Text>().text = countdowntime.ToString("F0");
+            if (countdowntime <= 0) {
+                Destroy(countdownText);
+                movestart = true;
+            }
             return;
+
+        } else {
+
+            if (clear) { return; }
+
+            if (time <= 0) {
+                GameOver();
+                return;
+            }
+
+
+            time -= Time.deltaTime;
+            timeText.text = "残り" + time.ToString("F0") + "秒";
+
+
         }
 
-
-        time -= Time.deltaTime;
-        timeText.text = "残り" + time.ToString("F0") + "秒";
 
     }
 
@@ -73,7 +114,34 @@ public class GameController : MonoBehaviour {
         //SceneManager.LoadScene("GameOver");
         timeText.text = "GameOver";
         gameover = true;
-        GameObject.Find("RetryButton").SetActive(true);
+        Retrybutton.SetActive(true);
 
+    }
+
+    public void StartButton() {
+        startbutton.SetActive(false);
+        panel.SetActive(false);
+        startflag = true;
+        audiosource.PlayOneShot(countSE);
+        
+        
+
+
+       // Countdown();
+       
+
+    }
+
+    void Countdown() {
+        startflag = true;
+     
+    }
+
+    public void CurrectSE() {
+        audiosource.PlayOneShot(currectSE);
+    }
+
+    public void inCurrectSE() {
+        audiosource.PlayOneShot(incurrectSE);
     }
 }

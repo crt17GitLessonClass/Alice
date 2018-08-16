@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 //using UnityEngine.UI;
 
 public class TimeCtrl : MonoBehaviour
-{             
+{
     public static float countTime = 1200;     
     public static bool f_count = false;
     public static bool f_timeup = false;
