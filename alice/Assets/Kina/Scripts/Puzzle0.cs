@@ -36,7 +36,7 @@ public class Puzzle0 : MonoBehaviour {
 	void Start () {
 		StartCoroutine(countDown());
 		cam = Camera.GetComponent<Camera>();
-		switch(Mathf.FloorToInt(GameMainCtrl.ceNum / 8)){
+		switch(Mathf.FloorToInt(GameMainCtrl.ceNum / 9)){
 			case 0:
 				Piece_easy.SetActive(true);
 				PutPos_easy.SetActive(true);
@@ -72,9 +72,7 @@ public class Puzzle0 : MonoBehaviour {
 			if(PutPos != null && PutPos.name.Substring(0) == MovingPiece.name.Substring(9)){
 				MovingPiece.transform.position = PutPos.transform.position;
 				count--;
-				if(count == 0){
-					SceneManager.LoadScene("GameClear");
-				}
+				if(count == 0){SceneManager.LoadScene("GameClear");}
 			}else{
 				MovingPiece.transform.position = startPos;
 				MovingPieceCol.enabled = true;
@@ -100,6 +98,7 @@ public class Puzzle0 : MonoBehaviour {
 			PutPos = other.gameObject;
 		}
 	}
+
 	IEnumerator countDown(){
 		while(timeLimit >= 0){
 			yield return new WaitForSeconds(1.0f);
