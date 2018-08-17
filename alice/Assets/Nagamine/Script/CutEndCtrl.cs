@@ -7,14 +7,25 @@ using UnityEngine.UI;
 public class CutEndCtrl : MonoBehaviour
 {
     public Text cutend_num;
-    AudioSource SE;
+    AudioSource SE1;
+    AudioSource SE2;
 
     void Start ()
     {
-        SE = GetComponent<AudioSource>();
+        AudioSource[] audiosources = GetComponents<AudioSource>();
+        SE1 = audiosources[0];
+        SE2 = audiosources[1];
+
         cutend_num.text = GameMainCtrl.ceGet.ToString();
         GameMainCtrl.ceNum += GameMainCtrl.ceGet;
+
+        Invoke("SEplay", 0.5f);
     }  	
+
+    void SEplay()
+    {
+        SE2.PlayOneShot(SE2.clip);
+    }
 	
 	void Update ()
     {
@@ -25,7 +36,7 @@ public class CutEndCtrl : MonoBehaviour
     {
         // シーン遷移前に ceGet を初期化
         GameMainCtrl.ceGet = 0;
-        SE.PlayOneShot(SE.clip);
+        SE1.PlayOneShot(SE1.clip);
         Invoke("MainSceneLoad", 0.5f);
     }
 
