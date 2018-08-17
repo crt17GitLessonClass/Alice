@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour {
 
     public GameObject Playerobj;
     public GameObject Retrybutton;
+    public GameObject Mainbackbutton;
 
     private int cutend = 3;
 
@@ -28,7 +29,7 @@ public class GameController : MonoBehaviour {
 
     private bool startflag = false;
 
-    float time = 30.0f;
+    float time = 60.0f;
     Text timeText;
     float countdowntime = 3.5f;
 
@@ -43,6 +44,11 @@ public class GameController : MonoBehaviour {
 
     [SerializeField]
     AudioClip incurrectSE;
+
+    public GameObject Currectimage_h1;
+    public GameObject Currectimage_d4;
+    public GameObject Currectimage_c5;
+    public GameObject Currectimage_s10;
 
 
 
@@ -92,6 +98,11 @@ public class GameController : MonoBehaviour {
         Destroy(destroy);
         Instantiate(Playerobj, Vector3.zero, Quaternion.identity);
 
+        Currectimage_h1.SetActive(false);
+        Currectimage_d4.SetActive(false);
+        Currectimage_c5.SetActive(false);
+        Currectimage_s10.SetActive(false);
+
         flag1 = true;
         flag4 = false;
         flag5 = false;
@@ -100,21 +111,23 @@ public class GameController : MonoBehaviour {
 
     public void Clear() {
         //SceneManager.LoadScene("Clear");
-        timeText.text = "Clear";
+        timeText.text = null;
         clear = true;
         GameMainCtrl.ceGet += cutend;
         GameMainCtrl.f_Q4 = true;
         //GameObject.Find("RetryButton").SetActive(true);
-        SceneManager.LoadScene("CutEnd");
+        Invoke("GoCutEnd", 1.0f);
+        //SceneManager.LoadScene("CutEnd");
 
 
     }
 
     void GameOver() {
         //SceneManager.LoadScene("GameOver");
-        timeText.text = "GameOver";
+        timeText.text = null;
         gameover = true;
         Retrybutton.SetActive(true);
+        Mainbackbutton.SetActive(true);
 
     }
 
@@ -124,17 +137,6 @@ public class GameController : MonoBehaviour {
         startflag = true;
         audiosource.PlayOneShot(countSE);
         
-        
-
-
-       // Countdown();
-       
-
-    }
-
-    void Countdown() {
-        startflag = true;
-     
     }
 
     public void CurrectSE() {
@@ -143,5 +145,8 @@ public class GameController : MonoBehaviour {
 
     public void inCurrectSE() {
         audiosource.PlayOneShot(incurrectSE);
+    }
+    void GoCutEnd() {
+        SceneManager.LoadScene("CutEnd");
     }
 }

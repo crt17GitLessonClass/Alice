@@ -6,12 +6,14 @@ using UnityEngine.SceneManagement;
 public class ARcameraCtrl : MonoBehaviour
 {
     public GameObject backButton;
-	
-	void Start ()
+    AudioSource SE;
+
+    void Start ()
     {
         if (!GameMainCtrl.f_gamestart)
             backButton.SetActive(false);
-	}  	
+        SE = GetComponent<AudioSource>();
+    }  	
 	
 	void Update ()
     {
@@ -20,7 +22,12 @@ public class ARcameraCtrl : MonoBehaviour
 
     public void GameMainBackButton()
     {
-        SceneManager.LoadScene("GameMain");
+        SE.PlayOneShot(SE.clip);
+        Invoke("MainSceneLoad", 0.5f);          
+    }
 
+    void MainSceneLoad()
+    {
+        SceneManager.LoadScene("GameMain");
     }
 }
