@@ -42,7 +42,7 @@ public class Puzzle : MonoBehaviour {
 		StartCoroutine(countDown());
 		cam = Camera.GetComponent<Camera>();
 		audioSource = gameObject.GetComponents<AudioSource>();
-		difficulty = 2/* Mathf.FloorToInt(GameMainCtrl.ceNum / 9)*/;
+		difficulty = Mathf.FloorToInt(GameMainCtrl.ceNum / 9);
 		switch(difficulty){
 			case 0:
 				movePossble = new bool[20];
