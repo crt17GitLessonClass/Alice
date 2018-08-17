@@ -4,19 +4,25 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class TitleCtrl : MonoBehaviour
-{    
-	
+{
+    AudioSource SE;
+    
 	void Start ()
     {
-		
+        SE = GetComponent<AudioSource>();        
 	}       
 
 	void Update ()
     {
-        if(Input.GetMouseButton(0))
+        if(Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("Tutorial");
-        }
-		
+            SE.PlayOneShot(SE.clip);
+            Invoke("MainSceneLoad", 1.5f);            
+        } 		
 	}
+
+    void MainSceneLoad()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
 }
