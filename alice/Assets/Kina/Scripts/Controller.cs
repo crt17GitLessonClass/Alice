@@ -12,7 +12,7 @@ public class Controller : MonoBehaviour {
 	public GameObject startButton;
 	public GameObject coment1;
 	public GameObject coment2;
-
+	
 	public BoxCollider[] maruTrueCol;
 	public BoxCollider[] maruFalseCol;
 	public SpriteRenderer[] maruTrueSprite;
@@ -38,6 +38,7 @@ public class Controller : MonoBehaviour {
 
 	Camera Camera;
 	BoxCollider touchCol;
+	AudioSource[] audioSource;
 
 	void Start(){
 		mistakeCountText.text = "あと" + mistakeCount + "こ";
@@ -45,6 +46,7 @@ public class Controller : MonoBehaviour {
 		cameraStartPos = cameraObject.transform.position;
 		Camera = cameraObject.GetComponent<Camera>();
 		touchCol = gameObject.GetComponent<BoxCollider>();
+		audioSource = gameObject.GetComponents<AudioSource>();
 	}
 
 	void FixedUpdate(){
@@ -101,10 +103,12 @@ public class Controller : MonoBehaviour {
 	}
 
 	void TouchScreen(Vector3 pos){
+		audioSource[0].Play();
 		touchCol.center = pos;
 	}
 
 	void OnTriggerEnter(Collider other){
+		audioSource[1].Play();
 		int i = int.Parse(other.gameObject.name);
 		maruTrueCol[i].enabled = false;
 		maruFalseCol[i].enabled = false;
@@ -120,6 +124,7 @@ public class Controller : MonoBehaviour {
 	}
 
 	public void OnStartButton(){
+		audioSource[0].Play();
 		gameActive = true;
 		mistakeCountText.gameObject.SetActive(true);
 		timeText.gameObject.SetActive(true);

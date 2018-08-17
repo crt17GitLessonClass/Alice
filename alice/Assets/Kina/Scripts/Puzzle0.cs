@@ -32,11 +32,17 @@ public class Puzzle0 : MonoBehaviour {
 	GameObject MovingPiece;
 	BoxCollider MovingPieceCol;
 	Renderer MovingPieceRen;
+	AudioSource[] audioSource;
 
 	void Start () {
 		StartCoroutine(countDown());
 		cam = Camera.GetComponent<Camera>();
-		switch(Mathf.FloorToInt(GameMainCtrl.ceNum / 9)){
+		audioSource = gameObject.GetComponents<AudioSource>();
+		Piece_hard.SetActive(true);
+		PutPos_hard.SetActive(true);
+		Panel_hard.SetActive(true);
+		count = 48;
+		/*switch(Mathf.FloorToInt(GameMainCtrl.ceNum / 9)){
 			case 0:
 				Piece_easy.SetActive(true);
 				PutPos_easy.SetActive(true);
@@ -55,7 +61,7 @@ public class Puzzle0 : MonoBehaviour {
 				Panel_hard.SetActive(true);
 				count = 56;
 				break;
-		}
+		}*/
 	}
 	
 	void FixedUpdate () {
@@ -70,10 +76,12 @@ public class Puzzle0 : MonoBehaviour {
 			MovingPiece.transform.position = cam.ScreenToWorldPoint(new Vector3(t.position.x, t.position.y, -Camera.transform.position.z));
 			if(t.phase != TouchPhase.Ended){return;}
 			if(PutPos != null && PutPos.name.Substring(0) == MovingPiece.name.Substring(9)){
+				audioSource[1].Play();
 				MovingPiece.transform.position = PutPos.transform.position;
 				count--;
 				if(count == 0){SceneManager.LoadScene("GameClear");}
 			}else{
+				audioSource[2].Play();
 				MovingPiece.transform.position = startPos;
 				MovingPieceCol.enabled = true;
 			}
@@ -86,6 +94,7 @@ public class Puzzle0 : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 		if(touching && other.gameObject.tag == "K_Piece"){
+			audioSource[0].Play();
 			startPos = other.gameObject.transform.position;
 			MovingPiece = other.gameObject;
 			touching = false;
@@ -100,7 +109,7 @@ public class Puzzle0 : MonoBehaviour {
 	}
 
 	IEnumerator countDown(){
-		while(timeLimit >= 0){
+		while(timeLimit > 0){
 			yield return new WaitForSeconds(1.0f);
 			timeLimit--;
 			timeLimitText.text = timeLimit.ToString();
